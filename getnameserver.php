@@ -15,5 +15,7 @@ try {
 		echo "IpAddress : ".$result->nameServer->IpAddress."\r\n";
 		echo "Status : ".$result->nameServer->Status."\r\n";
 	}	
+} catch (Exception $e) {
+    echo "error:".$e->getMessage();
 }
 ?>

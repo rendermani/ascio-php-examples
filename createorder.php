@@ -34,8 +34,8 @@ $admin = Array(
 // In PHP you should create a clone of the contact object
 // Otherwise the soap-client will create a soap-reference instead of using the full data.
 // That won't work 
-$tech =  array_merge(array(), $admin),
-$billing =  array_merge(array(), $admin),
+$tech =  array_merge(array(), $admin);
+$billing =  array_merge(array(), $admin);
 
 $order = array(
     'Type' => 'Register_Domain',
