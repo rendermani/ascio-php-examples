@@ -1,4 +1,3 @@
-<?
 <?php
 $wsdl = 'https://awstest.ascio.com/2012/01/01/AscioService.wsdl';
 $client = new SoapClient($wsdl,array( "trace" => 1 ));

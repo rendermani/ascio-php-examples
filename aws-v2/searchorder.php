@@ -12,7 +12,7 @@ array(
 		)
 	);
 try {
-	$result = $client->SearchOrder($params));
+	$result = $client->SearchOrder($params);
 	foreach ($result->orders->Order as $key => $order) {
 		echo $order->Domain->DomainName."<br>\n";
 	}

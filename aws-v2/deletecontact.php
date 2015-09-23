@@ -10,9 +10,10 @@ try {
 	$result = $client->DeleteContact($params);
 	echo "ResultCode : ".$result->DeleteContactResult->ResultCode."\r\n";
 	echo "ResultMessage : ".$result->DeleteContactResult->Message."\r\n";
-	if ($result->DeleteContactResult->ResultCode] == '200') {
-	echo "Contact has been deleted\r\n";
-}catch(Exception $e) {
+	if ($result->DeleteContactResult->ResultCode == '200') {
+		echo "Contact has been deleted\r\n";
+	}
+} catch(Exception $e) {
 	echo $e->getMessage(); 
 }
 
