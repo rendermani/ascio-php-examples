@@ -1,0 +1,37 @@
+<?php
+
+class GetNameWatchResponse extends AbstractResponse
+{
+
+    /**
+     * @var NameWatchInfo $NameWatchInfo
+     */
+    protected $NameWatchInfo = null;
+
+    /**
+     * @param int $ResultCode
+     */
+    public function __construct($ResultCode)
+    {
+      parent::__construct($ResultCode);
+    }
+
+    /**
+     * @return NameWatchInfo
+     */
+    public function getNameWatchInfo()
+    {
+      return $this->NameWatchInfo;
+    }
+
+    /**
+     * @param NameWatchInfo $NameWatchInfo
+     * @return GetNameWatchResponse
+     */
+    public function setNameWatchInfo($NameWatchInfo)
+    {
+      $this->NameWatchInfo = $NameWatchInfo;
+      return $this;
+    }
+
+}

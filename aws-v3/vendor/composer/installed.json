@@ -1,0 +1,106 @@
+[
+    {
+        "name": "symfony/options-resolver",
+        "version": "v2.7.3",
+        "version_normalized": "2.7.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/OptionsResolver.git",
+            "reference": "98c313c831e5d99bb393ba1844df91bab2bb5b8b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/OptionsResolver/zipball/98c313c831e5d99bb393ba1844df91bab2bb5b8b",
+            "reference": "98c313c831e5d99bb393ba1844df91bab2bb5b8b",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "require-dev": {
+            "symfony/phpunit-bridge": "~2.7"
+        },
+        "time": "2015-06-18 19:21:56",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.7-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\OptionsResolver\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony OptionsResolver Component",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "config",
+            "configuration",
+            "options"
+        ]
+    },
+    {
+        "name": "wsdl2phpgenerator/wsdl2phpgenerator",
+        "version": "3.2.0",
+        "version_normalized": "3.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wsdl2phpgenerator/wsdl2phpgenerator.git",
+            "reference": "94118628d25f05f495f21a35d34fb507775b01db"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wsdl2phpgenerator/wsdl2phpgenerator/zipball/94118628d25f05f495f21a35d34fb507775b01db",
+            "reference": "94118628d25f05f495f21a35d34fb507775b01db",
+            "shasum": ""
+        },
+        "require": {
+            "ext-soap": "*",
+            "php": ">=5.3.0",
+            "symfony/options-resolver": "~2.3"
+        },
+        "require-dev": {
+            "kasperg/phing-github": "0.2.*",
+            "phing/phing": "~2.7",
+            "php-vcr/phpunit-testlistener-vcr": "1.1.*",
+            "phpunit/phpunit": "~4.4",
+            "psr/log": "~1.0"
+        },
+        "time": "2015-05-13 06:13:30",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Wsdl2PhpGenerator\\": [
+                    "src/",
+                    "lib/"
+                ]
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Simple class library for generating php classes from a wsdl file.",
+        "keywords": [
+            "soap",
+            "wsdl"
+        ]
+    }
+]
