@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class Message
 {
 
@@ -58,7 +60,7 @@ class Message
 
     /**
      * @param ArrayOfAttachment $Attachments
-     * @return Message
+     * @return \ascio\v3\Message
      */
     public function setAttachments($Attachments)
     {
@@ -76,7 +78,7 @@ class Message
 
     /**
      * @param string $Body
-     * @return Message
+     * @return \ascio\v3\Message
      */
     public function setBody($Body)
     {
@@ -102,7 +104,7 @@ class Message
 
     /**
      * @param \DateTime $Created
-     * @return Message
+     * @return \ascio\v3\Message
      */
     public function setCreated(\DateTime $Created)
     {
@@ -120,7 +122,7 @@ class Message
 
     /**
      * @param string $FromAddress
-     * @return Message
+     * @return \ascio\v3\Message
      */
     public function setFromAddress($FromAddress)
     {
@@ -138,7 +140,7 @@ class Message
 
     /**
      * @param string $Subject
-     * @return Message
+     * @return \ascio\v3\Message
      */
     public function setSubject($Subject)
     {
@@ -156,7 +158,7 @@ class Message
 
     /**
      * @param string $ToAddress
-     * @return Message
+     * @return \ascio\v3\Message
      */
     public function setToAddress($ToAddress)
     {
@@ -174,7 +176,7 @@ class Message
 
     /**
      * @param MessageType $Type
-     * @return Message
+     * @return \ascio\v3\Message
      */
     public function setType($Type)
     {

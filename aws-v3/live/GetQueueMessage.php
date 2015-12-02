@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class GetQueueMessage
 {
 
@@ -26,7 +28,7 @@ class GetQueueMessage
 
     /**
      * @param GetQueueMessageRequest $request
-     * @return GetQueueMessage
+     * @return \ascio\v3\GetQueueMessage
      */
     public function setRequest($request)
     {

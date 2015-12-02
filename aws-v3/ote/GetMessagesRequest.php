@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class GetMessagesRequest
 {
 
@@ -24,7 +26,7 @@ class GetMessagesRequest
 
     /**
      * @param string $OrderId
-     * @return GetMessagesRequest
+     * @return \ascio\v3\GetMessagesRequest
      */
     public function setOrderId($OrderId)
     {

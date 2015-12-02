@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class Trademark extends AbstractMark
 {
 
@@ -54,7 +56,7 @@ class Trademark extends AbstractMark
 
     /**
      * @param string $ApplicationId
-     * @return Trademark
+     * @return \ascio\v3\Trademark
      */
     public function setApplicationId($ApplicationId)
     {
@@ -72,7 +74,7 @@ class Trademark extends AbstractMark
 
     /**
      * @param string $RegistrationNumber
-     * @return Trademark
+     * @return \ascio\v3\Trademark
      */
     public function setRegistrationNumber($RegistrationNumber)
     {
@@ -98,7 +100,7 @@ class Trademark extends AbstractMark
 
     /**
      * @param \DateTime $ApplicationDate
-     * @return Trademark
+     * @return \ascio\v3\Trademark
      */
     public function setApplicationDate(\DateTime $ApplicationDate)
     {
@@ -124,7 +126,7 @@ class Trademark extends AbstractMark
 
     /**
      * @param \DateTime $RegistrationDate
-     * @return Trademark
+     * @return \ascio\v3\Trademark
      */
     public function setRegistrationDate(\DateTime $RegistrationDate)
     {
@@ -150,7 +152,7 @@ class Trademark extends AbstractMark
 
     /**
      * @param \DateTime $ExpirationDate
-     * @return Trademark
+     * @return \ascio\v3\Trademark
      */
     public function setExpirationDate(\DateTime $ExpirationDate)
     {
@@ -168,7 +170,7 @@ class Trademark extends AbstractMark
 
     /**
      * @param ArrayOfint $GoodsAndServicesClasses
-     * @return Trademark
+     * @return \ascio\v3\Trademark
      */
     public function setGoodsAndServicesClasses($GoodsAndServicesClasses)
     {
@@ -186,7 +188,7 @@ class Trademark extends AbstractMark
 
     /**
      * @param string $Jurisdiction
-     * @return Trademark
+     * @return \ascio\v3\Trademark
      */
     public function setJurisdiction($Jurisdiction)
     {

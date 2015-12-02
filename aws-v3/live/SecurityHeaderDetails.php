@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class SecurityHeaderDetails
 {
 
@@ -29,7 +31,7 @@ class SecurityHeaderDetails
 
     /**
      * @param string $Account
-     * @return SecurityHeaderDetails
+     * @return \ascio\v3\SecurityHeaderDetails
      */
     public function setAccount($Account)
     {
@@ -47,7 +49,7 @@ class SecurityHeaderDetails
 
     /**
      * @param string $Password
-     * @return SecurityHeaderDetails
+     * @return \ascio\v3\SecurityHeaderDetails
      */
     public function setPassword($Password)
     {

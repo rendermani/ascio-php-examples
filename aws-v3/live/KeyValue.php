@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class KeyValue
 {
 
@@ -33,7 +35,7 @@ class KeyValue
 
     /**
      * @param string $Key
-     * @return KeyValue
+     * @return \ascio\v3\KeyValue
      */
     public function setKey($Key)
     {
@@ -51,7 +53,7 @@ class KeyValue
 
     /**
      * @param string $Value
-     * @return KeyValue
+     * @return \ascio\v3\KeyValue
      */
     public function setValue($Value)
     {

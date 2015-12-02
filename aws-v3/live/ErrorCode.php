@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class ErrorCode
 {
 
@@ -29,7 +31,7 @@ class ErrorCode
 
     /**
      * @param string $Code
-     * @return ErrorCode
+     * @return \ascio\v3\ErrorCode
      */
     public function setCode($Code)
     {
@@ -47,7 +49,7 @@ class ErrorCode
 
     /**
      * @param string $Message
-     * @return ErrorCode
+     * @return \ascio\v3\ErrorCode
      */
     public function setMessage($Message)
     {

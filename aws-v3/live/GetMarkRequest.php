@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class GetMarkRequest
 {
 
@@ -24,7 +26,7 @@ class GetMarkRequest
 
     /**
      * @param string $Handle
-     * @return GetMarkRequest
+     * @return \ascio\v3\GetMarkRequest
      */
     public function setHandle($Handle)
     {

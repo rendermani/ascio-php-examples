@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class UploadMessage
 {
 
@@ -26,7 +28,7 @@ class UploadMessage
 
     /**
      * @param UploadMessageRequest $request
-     * @return UploadMessage
+     * @return \ascio\v3\UploadMessage
      */
     public function setRequest($request)
     {

@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class ArrayOfObjectType
 {
 
@@ -26,7 +28,7 @@ class ArrayOfObjectType
 
     /**
      * @param ObjectType[] $ObjectType
-     * @return ArrayOfObjectType
+     * @return \ascio\v3\ArrayOfObjectType
      */
     public function setObjectType(array $ObjectType)
     {

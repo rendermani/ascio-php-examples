@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class ArrayOfstring
 {
 
@@ -24,7 +26,7 @@ class ArrayOfstring
 
     /**
      * @param string[] $string
-     * @return ArrayOfstring
+     * @return \ascio\v3\ArrayOfstring
      */
     public function setString(array $string)
     {

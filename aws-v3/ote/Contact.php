@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class Contact
 {
 
@@ -104,7 +106,7 @@ class Contact
 
     /**
      * @param string $Handle
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setHandle($Handle)
     {
@@ -122,7 +124,7 @@ class Contact
 
     /**
      * @param string $FirstName
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setFirstName($FirstName)
     {
@@ -140,7 +142,7 @@ class Contact
 
     /**
      * @param string $LastName
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setLastName($LastName)
     {
@@ -158,7 +160,7 @@ class Contact
 
     /**
      * @param string $OrgName
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setOrgName($OrgName)
     {
@@ -176,7 +178,7 @@ class Contact
 
     /**
      * @param string $Address1
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setAddress1($Address1)
     {
@@ -194,7 +196,7 @@ class Contact
 
     /**
      * @param string $Address2
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setAddress2($Address2)
     {
@@ -212,7 +214,7 @@ class Contact
 
     /**
      * @param string $City
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setCity($City)
     {
@@ -230,7 +232,7 @@ class Contact
 
     /**
      * @param string $State
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setState($State)
     {
@@ -248,7 +250,7 @@ class Contact
 
     /**
      * @param string $PostalCode
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setPostalCode($PostalCode)
     {
@@ -266,7 +268,7 @@ class Contact
 
     /**
      * @param string $CountryCode
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setCountryCode($CountryCode)
     {
@@ -284,7 +286,7 @@ class Contact
 
     /**
      * @param string $Phone
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setPhone($Phone)
     {
@@ -302,7 +304,7 @@ class Contact
 
     /**
      * @param string $Fax
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setFax($Fax)
     {
@@ -320,7 +322,7 @@ class Contact
 
     /**
      * @param string $Email
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setEmail($Email)
     {
@@ -338,7 +340,7 @@ class Contact
 
     /**
      * @param string $Type
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setType($Type)
     {
@@ -356,7 +358,7 @@ class Contact
 
     /**
      * @param string $Details
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setDetails($Details)
     {
@@ -374,7 +376,7 @@ class Contact
 
     /**
      * @param string $OrganisationNumber
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setOrganisationNumber($OrganisationNumber)
     {
@@ -392,7 +394,7 @@ class Contact
 
     /**
      * @param Extensions $Extensions
-     * @return Contact
+     * @return \ascio\v3\Contact
      */
     public function setExtensions($Extensions)
     {

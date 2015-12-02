@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class ArrayOfErrorCode
 {
 
@@ -24,7 +26,7 @@ class ArrayOfErrorCode
 
     /**
      * @param ErrorCode[] $ErrorCode
-     * @return ArrayOfErrorCode
+     * @return \ascio\v3\ArrayOfErrorCode
      */
     public function setErrorCode(array $ErrorCode)
     {

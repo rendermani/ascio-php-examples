@@ -13,7 +13,7 @@
 
     <xsd:complexType name="UserAuthor">
         <xsd:complexContent>
-            <xsd:extension base="Author">
+            <xsd:extension base="tns:Author">
                 <xsd:sequence>
                     <xsd:element name="userid" type="xsd:string"/>
                 </xsd:sequence>

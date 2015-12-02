@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class OrderInfo
 {
 
@@ -43,7 +45,7 @@ class OrderInfo
 
     /**
      * @param string $OrderId
-     * @return OrderInfo
+     * @return \ascio\v3\OrderInfo
      */
     public function setOrderId($OrderId)
     {
@@ -61,7 +63,7 @@ class OrderInfo
 
     /**
      * @param OrderStatusType $Status
-     * @return OrderInfo
+     * @return \ascio\v3\OrderInfo
      */
     public function setStatus($Status)
     {
@@ -87,7 +89,7 @@ class OrderInfo
 
     /**
      * @param \DateTime $Created
-     * @return OrderInfo
+     * @return \ascio\v3\OrderInfo
      */
     public function setCreated(\DateTime $Created)
     {
@@ -105,7 +107,7 @@ class OrderInfo
 
     /**
      * @param AbstractOrderRequest $OrderRequest
-     * @return OrderInfo
+     * @return \ascio\v3\OrderInfo
      */
     public function setOrderRequest($OrderRequest)
     {

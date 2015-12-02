@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class Attachment
 {
 
@@ -29,7 +31,7 @@ class Attachment
 
     /**
      * @param string $FileName
-     * @return Attachment
+     * @return \ascio\v3\Attachment
      */
     public function setFileName($FileName)
     {
@@ -47,7 +49,7 @@ class Attachment
 
     /**
      * @param base64Binary $Content
-     * @return Attachment
+     * @return \ascio\v3\Attachment
      */
     public function setContent($Content)
     {

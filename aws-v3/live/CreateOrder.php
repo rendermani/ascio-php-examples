@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class CreateOrder
 {
 
@@ -26,7 +28,7 @@ class CreateOrder
 
     /**
      * @param AbstractOrderRequest $request
-     * @return CreateOrder
+     * @return \ascio\v3\CreateOrder
      */
     public function setRequest($request)
     {

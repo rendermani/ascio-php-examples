@@ -1,36 +1,40 @@
 <?php
 
+namespace ascio\v3;
+
 class GetSslCertificateResponse extends AbstractResponse
 {
 
     /**
-     * @var SslCertificateInfo $SslCertificateInfo
+     * @var GetSslCertificateResponse $GetSslCertificateResult
      */
-    protected $SslCertificateInfo = null;
+    protected $GetSslCertificateResult = null;
 
     /**
      * @param int $ResultCode
+     * @param GetSslCertificateResponse $GetSslCertificateResult
      */
-    public function __construct($ResultCode)
+    public function __construct($ResultCode, $GetSslCertificateResult)
     {
       parent::__construct($ResultCode);
+      $this->GetSslCertificateResult = $GetSslCertificateResult;
     }
 
     /**
-     * @return SslCertificateInfo
-     */
-    public function getSslCertificateInfo()
-    {
-      return $this->SslCertificateInfo;
-    }
-
-    /**
-     * @param SslCertificateInfo $SslCertificateInfo
      * @return GetSslCertificateResponse
      */
-    public function setSslCertificateInfo($SslCertificateInfo)
+    public function getGetSslCertificateResult()
     {
-      $this->SslCertificateInfo = $SslCertificateInfo;
+      return $this->GetSslCertificateResult;
+    }
+
+    /**
+     * @param GetSslCertificateResponse $GetSslCertificateResult
+     * @return \ascio\v3\GetSslCertificateResponse
+     */
+    public function setGetSslCertificateResult($GetSslCertificateResult)
+    {
+      $this->GetSslCertificateResult = $GetSslCertificateResult;
       return $this;
     }
 

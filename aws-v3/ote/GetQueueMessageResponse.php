@@ -1,36 +1,40 @@
 <?php
 
+namespace ascio\v3;
+
 class GetQueueMessageResponse extends AbstractResponse
 {
 
     /**
-     * @var QueueMessage $Message
+     * @var GetQueueMessageResponse $GetQueueMessageResult
      */
-    protected $Message = null;
+    protected $GetQueueMessageResult = null;
 
     /**
      * @param int $ResultCode
+     * @param GetQueueMessageResponse $GetQueueMessageResult
      */
-    public function __construct($ResultCode)
+    public function __construct($ResultCode, $GetQueueMessageResult)
     {
       parent::__construct($ResultCode);
+      $this->GetQueueMessageResult = $GetQueueMessageResult;
     }
 
     /**
-     * @return QueueMessage
-     */
-    public function getMessage()
-    {
-      return $this->Message;
-    }
-
-    /**
-     * @param QueueMessage $Message
      * @return GetQueueMessageResponse
      */
-    public function setMessage($Message)
+    public function getGetQueueMessageResult()
     {
-      $this->Message = $Message;
+      return $this->GetQueueMessageResult;
+    }
+
+    /**
+     * @param GetQueueMessageResponse $GetQueueMessageResult
+     * @return \ascio\v3\GetQueueMessageResponse
+     */
+    public function setGetQueueMessageResult($GetQueueMessageResult)
+    {
+      $this->GetQueueMessageResult = $GetQueueMessageResult;
       return $this;
     }
 

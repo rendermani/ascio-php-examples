@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class GetOrdersRequest
 {
 
@@ -71,7 +73,7 @@ class GetOrdersRequest
 
     /**
      * @param string $TransactionComment
-     * @return GetOrdersRequest
+     * @return \ascio\v3\GetOrdersRequest
      */
     public function setTransactionComment($TransactionComment)
     {
@@ -89,7 +91,7 @@ class GetOrdersRequest
 
     /**
      * @param string $Comments
-     * @return GetOrdersRequest
+     * @return \ascio\v3\GetOrdersRequest
      */
     public function setComments($Comments)
     {
@@ -107,7 +109,7 @@ class GetOrdersRequest
 
     /**
      * @param string $ObjectName
-     * @return GetOrdersRequest
+     * @return \ascio\v3\GetOrdersRequest
      */
     public function setObjectName($ObjectName)
     {
@@ -133,7 +135,7 @@ class GetOrdersRequest
 
     /**
      * @param \DateTime $FromDate
-     * @return GetOrdersRequest
+     * @return \ascio\v3\GetOrdersRequest
      */
     public function setFromDate(\DateTime $FromDate)
     {
@@ -159,7 +161,7 @@ class GetOrdersRequest
 
     /**
      * @param \DateTime $ToDate
-     * @return GetOrdersRequest
+     * @return \ascio\v3\GetOrdersRequest
      */
     public function setToDate(\DateTime $ToDate)
     {
@@ -177,7 +179,7 @@ class GetOrdersRequest
 
     /**
      * @param ArrayOfOrderStatusType $OrderStatusTypes
-     * @return GetOrdersRequest
+     * @return \ascio\v3\GetOrdersRequest
      */
     public function setOrderStatusTypes($OrderStatusTypes)
     {
@@ -195,7 +197,7 @@ class GetOrdersRequest
 
     /**
      * @param ArrayOfOrderType $OrderTypes
-     * @return GetOrdersRequest
+     * @return \ascio\v3\GetOrdersRequest
      */
     public function setOrderTypes($OrderTypes)
     {
@@ -213,7 +215,7 @@ class GetOrdersRequest
 
     /**
      * @param ArrayOfObjectType $ObjectTypes
-     * @return GetOrdersRequest
+     * @return \ascio\v3\GetOrdersRequest
      */
     public function setObjectTypes($ObjectTypes)
     {
@@ -231,7 +233,7 @@ class GetOrdersRequest
 
     /**
      * @param SearchOrderSortType $OrderSort
-     * @return GetOrdersRequest
+     * @return \ascio\v3\GetOrdersRequest
      */
     public function setOrderSort($OrderSort)
     {
@@ -249,7 +251,7 @@ class GetOrdersRequest
 
     /**
      * @param PagingInfo $PageInfo
-     * @return GetOrdersRequest
+     * @return \ascio\v3\GetOrdersRequest
      */
     public function setPageInfo($PageInfo)
     {

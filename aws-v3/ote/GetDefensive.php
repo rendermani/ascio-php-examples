@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class GetDefensive
 {
 
@@ -26,7 +28,7 @@ class GetDefensive
 
     /**
      * @param GetDefensiveRequest $request
-     * @return GetDefensive
+     * @return \ascio\v3\GetDefensive
      */
     public function setRequest($request)
     {

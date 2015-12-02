@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class SslCertificateOrderRequest extends AbstractOrderRequest
 {
 
@@ -26,7 +28,7 @@ class SslCertificateOrderRequest extends AbstractOrderRequest
 
     /**
      * @param SslCertificate $SslCertificate
-     * @return SslCertificateOrderRequest
+     * @return \ascio\v3\SslCertificateOrderRequest
      */
     public function setSslCertificate($SslCertificate)
     {

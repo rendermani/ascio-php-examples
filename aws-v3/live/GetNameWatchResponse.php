@@ -1,36 +1,40 @@
 <?php
 
+namespace ascio\v3;
+
 class GetNameWatchResponse extends AbstractResponse
 {
 
     /**
-     * @var NameWatchInfo $NameWatchInfo
+     * @var GetNameWatchResponse $GetNameWatchResult
      */
-    protected $NameWatchInfo = null;
+    protected $GetNameWatchResult = null;
 
     /**
      * @param int $ResultCode
+     * @param GetNameWatchResponse $GetNameWatchResult
      */
-    public function __construct($ResultCode)
+    public function __construct($ResultCode, $GetNameWatchResult)
     {
       parent::__construct($ResultCode);
+      $this->GetNameWatchResult = $GetNameWatchResult;
     }
 
     /**
-     * @return NameWatchInfo
-     */
-    public function getNameWatchInfo()
-    {
-      return $this->NameWatchInfo;
-    }
-
-    /**
-     * @param NameWatchInfo $NameWatchInfo
      * @return GetNameWatchResponse
      */
-    public function setNameWatchInfo($NameWatchInfo)
+    public function getGetNameWatchResult()
     {
-      $this->NameWatchInfo = $NameWatchInfo;
+      return $this->GetNameWatchResult;
+    }
+
+    /**
+     * @param GetNameWatchResponse $GetNameWatchResult
+     * @return \ascio\v3\GetNameWatchResponse
+     */
+    public function setGetNameWatchResult($GetNameWatchResult)
+    {
+      $this->GetNameWatchResult = $GetNameWatchResult;
       return $this;
     }
 

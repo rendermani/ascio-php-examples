@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 abstract class AbstractResponse
 {
 
@@ -36,7 +38,7 @@ abstract class AbstractResponse
 
     /**
      * @param int $ResultCode
-     * @return AbstractResponse
+     * @return \ascio\v3\AbstractResponse
      */
     public function setResultCode($ResultCode)
     {
@@ -54,7 +56,7 @@ abstract class AbstractResponse
 
     /**
      * @param string $ResultMessage
-     * @return AbstractResponse
+     * @return \ascio\v3\AbstractResponse
      */
     public function setResultMessage($ResultMessage)
     {
@@ -72,7 +74,7 @@ abstract class AbstractResponse
 
     /**
      * @param ArrayOfstring $Errors
-     * @return AbstractResponse
+     * @return \ascio\v3\AbstractResponse
      */
     public function setErrors($Errors)
     {

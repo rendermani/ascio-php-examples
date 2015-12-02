@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class PollQueue
 {
 
@@ -26,7 +28,7 @@ class PollQueue
 
     /**
      * @param PollQueueRequest $request
-     * @return PollQueue
+     * @return \ascio\v3\PollQueue
      */
     public function setRequest($request)
     {

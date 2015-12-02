@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class SslCertificateInfo
 {
 
@@ -88,7 +90,7 @@ class SslCertificateInfo
 
     /**
      * @param string $Handle
-     * @return SslCertificateInfo
+     * @return \ascio\v3\SslCertificateInfo
      */
     public function setHandle($Handle)
     {
@@ -106,7 +108,7 @@ class SslCertificateInfo
 
     /**
      * @param string $Status
-     * @return SslCertificateInfo
+     * @return \ascio\v3\SslCertificateInfo
      */
     public function setStatus($Status)
     {
@@ -132,7 +134,7 @@ class SslCertificateInfo
 
     /**
      * @param \DateTime $Created
-     * @return SslCertificateInfo
+     * @return \ascio\v3\SslCertificateInfo
      */
     public function setCreated(\DateTime $Created)
     {
@@ -158,7 +160,7 @@ class SslCertificateInfo
 
     /**
      * @param \DateTime $Expires
-     * @return SslCertificateInfo
+     * @return \ascio\v3\SslCertificateInfo
      */
     public function setExpires(\DateTime $Expires)
     {
@@ -176,7 +178,7 @@ class SslCertificateInfo
 
     /**
      * @param string $CommonName
-     * @return SslCertificateInfo
+     * @return \ascio\v3\SslCertificateInfo
      */
     public function setCommonName($CommonName)
     {
@@ -194,7 +196,7 @@ class SslCertificateInfo
 
     /**
      * @param string $ProductCode
-     * @return SslCertificateInfo
+     * @return \ascio\v3\SslCertificateInfo
      */
     public function setProductCode($ProductCode)
     {
@@ -212,7 +214,7 @@ class SslCertificateInfo
 
     /**
      * @param WebServerType $WebServerType
-     * @return SslCertificateInfo
+     * @return \ascio\v3\SslCertificateInfo
      */
     public function setWebServerType($WebServerType)
     {
@@ -230,7 +232,7 @@ class SslCertificateInfo
 
     /**
      * @param string $ApproverEmail
-     * @return SslCertificateInfo
+     * @return \ascio\v3\SslCertificateInfo
      */
     public function setApproverEmail($ApproverEmail)
     {
@@ -248,7 +250,7 @@ class SslCertificateInfo
 
     /**
      * @param string $CSR
-     * @return SslCertificateInfo
+     * @return \ascio\v3\SslCertificateInfo
      */
     public function setCSR($CSR)
     {
@@ -266,7 +268,7 @@ class SslCertificateInfo
 
     /**
      * @param string $Certificate
-     * @return SslCertificateInfo
+     * @return \ascio\v3\SslCertificateInfo
      */
     public function setCertificate($Certificate)
     {
@@ -284,7 +286,7 @@ class SslCertificateInfo
 
     /**
      * @param Registrant $Owner
-     * @return SslCertificateInfo
+     * @return \ascio\v3\SslCertificateInfo
      */
     public function setOwner($Owner)
     {
@@ -302,7 +304,7 @@ class SslCertificateInfo
 
     /**
      * @param Contact $Admin
-     * @return SslCertificateInfo
+     * @return \ascio\v3\SslCertificateInfo
      */
     public function setAdmin($Admin)
     {
@@ -320,7 +322,7 @@ class SslCertificateInfo
 
     /**
      * @param Contact $Tech
-     * @return SslCertificateInfo
+     * @return \ascio\v3\SslCertificateInfo
      */
     public function setTech($Tech)
     {

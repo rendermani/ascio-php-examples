@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class GetOrderRequest
 {
 
@@ -24,7 +26,7 @@ class GetOrderRequest
 
     /**
      * @param string $OrderId
-     * @return GetOrderRequest
+     * @return \ascio\v3\GetOrderRequest
      */
     public function setOrderId($OrderId)
     {

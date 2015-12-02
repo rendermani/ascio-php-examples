@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class DefensiveInfo
 {
 
@@ -81,7 +83,7 @@ class DefensiveInfo
 
     /**
      * @param string $Handle
-     * @return DefensiveInfo
+     * @return \ascio\v3\DefensiveInfo
      */
     public function setHandle($Handle)
     {
@@ -99,7 +101,7 @@ class DefensiveInfo
 
     /**
      * @param string $Status
-     * @return DefensiveInfo
+     * @return \ascio\v3\DefensiveInfo
      */
     public function setStatus($Status)
     {
@@ -125,7 +127,7 @@ class DefensiveInfo
 
     /**
      * @param \DateTime $Created
-     * @return DefensiveInfo
+     * @return \ascio\v3\DefensiveInfo
      */
     public function setCreated(\DateTime $Created)
     {
@@ -151,7 +153,7 @@ class DefensiveInfo
 
     /**
      * @param \DateTime $Expires
-     * @return DefensiveInfo
+     * @return \ascio\v3\DefensiveInfo
      */
     public function setExpires(\DateTime $Expires)
     {
@@ -169,7 +171,7 @@ class DefensiveInfo
 
     /**
      * @param string $Name
-     * @return DefensiveInfo
+     * @return \ascio\v3\DefensiveInfo
      */
     public function setName($Name)
     {
@@ -187,7 +189,7 @@ class DefensiveInfo
 
     /**
      * @param string $AuthInfo
-     * @return DefensiveInfo
+     * @return \ascio\v3\DefensiveInfo
      */
     public function setAuthInfo($AuthInfo)
     {
@@ -205,7 +207,7 @@ class DefensiveInfo
 
     /**
      * @param string $Encoding
-     * @return DefensiveInfo
+     * @return \ascio\v3\DefensiveInfo
      */
     public function setEncoding($Encoding)
     {
@@ -223,7 +225,7 @@ class DefensiveInfo
 
     /**
      * @param Registrant $Owner
-     * @return DefensiveInfo
+     * @return \ascio\v3\DefensiveInfo
      */
     public function setOwner($Owner)
     {
@@ -241,7 +243,7 @@ class DefensiveInfo
 
     /**
      * @param Contact $Admin
-     * @return DefensiveInfo
+     * @return \ascio\v3\DefensiveInfo
      */
     public function setAdmin($Admin)
     {
@@ -259,7 +261,7 @@ class DefensiveInfo
 
     /**
      * @param Contact $Tech
-     * @return DefensiveInfo
+     * @return \ascio\v3\DefensiveInfo
      */
     public function setTech($Tech)
     {
@@ -277,7 +279,7 @@ class DefensiveInfo
 
     /**
      * @param Contact $Billing
-     * @return DefensiveInfo
+     * @return \ascio\v3\DefensiveInfo
      */
     public function setBilling($Billing)
     {
@@ -295,7 +297,7 @@ class DefensiveInfo
 
     /**
      * @param Contact $Reseller
-     * @return DefensiveInfo
+     * @return \ascio\v3\DefensiveInfo
      */
     public function setReseller($Reseller)
     {

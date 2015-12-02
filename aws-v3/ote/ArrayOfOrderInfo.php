@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class ArrayOfOrderInfo
 {
 
@@ -24,7 +26,7 @@ class ArrayOfOrderInfo
 
     /**
      * @param OrderInfo[] $OrderInfo
-     * @return ArrayOfOrderInfo
+     * @return \ascio\v3\ArrayOfOrderInfo
      */
     public function setOrderInfo(array $OrderInfo)
     {

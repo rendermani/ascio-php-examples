@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class GetMessages
 {
 
@@ -26,7 +28,7 @@ class GetMessages
 
     /**
      * @param GetMessagesRequest $request
-     * @return GetMessages
+     * @return \ascio\v3\GetMessages
      */
     public function setRequest($request)
     {

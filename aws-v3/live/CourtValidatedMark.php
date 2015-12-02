@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class CourtValidatedMark extends AbstractMark
 {
 
@@ -44,7 +46,7 @@ class CourtValidatedMark extends AbstractMark
 
     /**
      * @param string $CourtName
-     * @return CourtValidatedMark
+     * @return \ascio\v3\CourtValidatedMark
      */
     public function setCourtName($CourtName)
     {
@@ -62,7 +64,7 @@ class CourtValidatedMark extends AbstractMark
 
     /**
      * @param string $ReferenceNumber
-     * @return CourtValidatedMark
+     * @return \ascio\v3\CourtValidatedMark
      */
     public function setReferenceNumber($ReferenceNumber)
     {
@@ -80,7 +82,7 @@ class CourtValidatedMark extends AbstractMark
 
     /**
      * @param string $Country
-     * @return CourtValidatedMark
+     * @return \ascio\v3\CourtValidatedMark
      */
     public function setCountry($Country)
     {
@@ -98,7 +100,7 @@ class CourtValidatedMark extends AbstractMark
 
     /**
      * @param string $Region
-     * @return CourtValidatedMark
+     * @return \ascio\v3\CourtValidatedMark
      */
     public function setRegion($Region)
     {
@@ -124,7 +126,7 @@ class CourtValidatedMark extends AbstractMark
 
     /**
      * @param \DateTime $ProtectionDate
-     * @return CourtValidatedMark
+     * @return \ascio\v3\CourtValidatedMark
      */
     public function setProtectionDate(\DateTime $ProtectionDate)
     {

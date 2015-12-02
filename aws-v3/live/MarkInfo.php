@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class MarkInfo
 {
 
@@ -46,7 +48,7 @@ class MarkInfo
 
     /**
      * @param string $Status
-     * @return MarkInfo
+     * @return \ascio\v3\MarkInfo
      */
     public function setStatus($Status)
     {
@@ -72,7 +74,7 @@ class MarkInfo
 
     /**
      * @param \DateTime $Created
-     * @return MarkInfo
+     * @return \ascio\v3\MarkInfo
      */
     public function setCreated(\DateTime $Created)
     {
@@ -98,7 +100,7 @@ class MarkInfo
 
     /**
      * @param \DateTime $Expires
-     * @return MarkInfo
+     * @return \ascio\v3\MarkInfo
      */
     public function setExpires(\DateTime $Expires)
     {
@@ -116,7 +118,7 @@ class MarkInfo
 
     /**
      * @param AbstractMark $Mark
-     * @return MarkInfo
+     * @return \ascio\v3\MarkInfo
      */
     public function setMark($Mark)
     {
@@ -134,7 +136,7 @@ class MarkInfo
 
     /**
      * @param string $Smd
-     * @return MarkInfo
+     * @return \ascio\v3\MarkInfo
      */
     public function setSmd($Smd)
     {

@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class DefensiveOrderRequest extends AbstractOrderRequest
 {
 
@@ -26,7 +28,7 @@ class DefensiveOrderRequest extends AbstractOrderRequest
 
     /**
      * @param Defensive $Defensive
-     * @return DefensiveOrderRequest
+     * @return \ascio\v3\DefensiveOrderRequest
      */
     public function setDefensive($Defensive)
     {

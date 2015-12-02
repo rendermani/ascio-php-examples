@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class ArrayOfMessage
 {
 
@@ -24,7 +26,7 @@ class ArrayOfMessage
 
     /**
      * @param Message[] $Message
-     * @return ArrayOfMessage
+     * @return \ascio\v3\ArrayOfMessage
      */
     public function setMessage(array $Message)
     {

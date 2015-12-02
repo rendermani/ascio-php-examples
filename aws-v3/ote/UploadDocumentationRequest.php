@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class UploadDocumentationRequest
 {
 
@@ -29,7 +31,7 @@ class UploadDocumentationRequest
 
     /**
      * @param string $OrderId
-     * @return UploadDocumentationRequest
+     * @return \ascio\v3\UploadDocumentationRequest
      */
     public function setOrderId($OrderId)
     {
@@ -47,7 +49,7 @@ class UploadDocumentationRequest
 
     /**
      * @param ArrayOfAttachment $Documents
-     * @return UploadDocumentationRequest
+     * @return \ascio\v3\UploadDocumentationRequest
      */
     public function setDocuments($Documents)
     {

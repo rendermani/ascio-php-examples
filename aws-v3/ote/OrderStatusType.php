@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class OrderStatusType
 {
     const __default = 'NotSet';

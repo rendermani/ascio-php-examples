@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class NameWatchInfo
 {
 
@@ -100,7 +102,7 @@ class NameWatchInfo
 
     /**
      * @param string $Handle
-     * @return NameWatchInfo
+     * @return \ascio\v3\NameWatchInfo
      */
     public function setHandle($Handle)
     {
@@ -118,7 +120,7 @@ class NameWatchInfo
 
     /**
      * @param string $Status
-     * @return NameWatchInfo
+     * @return \ascio\v3\NameWatchInfo
      */
     public function setStatus($Status)
     {
@@ -144,7 +146,7 @@ class NameWatchInfo
 
     /**
      * @param \DateTime $Created
-     * @return NameWatchInfo
+     * @return \ascio\v3\NameWatchInfo
      */
     public function setCreated(\DateTime $Created)
     {
@@ -170,7 +172,7 @@ class NameWatchInfo
 
     /**
      * @param \DateTime $Expires
-     * @return NameWatchInfo
+     * @return \ascio\v3\NameWatchInfo
      */
     public function setExpires(\DateTime $Expires)
     {
@@ -188,7 +190,7 @@ class NameWatchInfo
 
     /**
      * @param string $Name
-     * @return NameWatchInfo
+     * @return \ascio\v3\NameWatchInfo
      */
     public function setName($Name)
     {
@@ -206,7 +208,7 @@ class NameWatchInfo
 
     /**
      * @param NotificationFrequencyType $NotificationFrequency
-     * @return NameWatchInfo
+     * @return \ascio\v3\NameWatchInfo
      */
     public function setNotificationFrequency($NotificationFrequency)
     {
@@ -224,7 +226,7 @@ class NameWatchInfo
 
     /**
      * @param int $Tier
-     * @return NameWatchInfo
+     * @return \ascio\v3\NameWatchInfo
      */
     public function setTier($Tier)
     {
@@ -242,7 +244,7 @@ class NameWatchInfo
 
     /**
      * @param string $EmailNotification1
-     * @return NameWatchInfo
+     * @return \ascio\v3\NameWatchInfo
      */
     public function setEmailNotification1($EmailNotification1)
     {
@@ -260,7 +262,7 @@ class NameWatchInfo
 
     /**
      * @param string $EmailNotification2
-     * @return NameWatchInfo
+     * @return \ascio\v3\NameWatchInfo
      */
     public function setEmailNotification2($EmailNotification2)
     {
@@ -278,7 +280,7 @@ class NameWatchInfo
 
     /**
      * @param string $EmailNotification3
-     * @return NameWatchInfo
+     * @return \ascio\v3\NameWatchInfo
      */
     public function setEmailNotification3($EmailNotification3)
     {
@@ -296,7 +298,7 @@ class NameWatchInfo
 
     /**
      * @param string $EmailNotification4
-     * @return NameWatchInfo
+     * @return \ascio\v3\NameWatchInfo
      */
     public function setEmailNotification4($EmailNotification4)
     {
@@ -314,7 +316,7 @@ class NameWatchInfo
 
     /**
      * @param string $EmailNotification5
-     * @return NameWatchInfo
+     * @return \ascio\v3\NameWatchInfo
      */
     public function setEmailNotification5($EmailNotification5)
     {
@@ -332,7 +334,7 @@ class NameWatchInfo
 
     /**
      * @param Registrant $Owner
-     * @return NameWatchInfo
+     * @return \ascio\v3\NameWatchInfo
      */
     public function setOwner($Owner)
     {
@@ -350,7 +352,7 @@ class NameWatchInfo
 
     /**
      * @param Contact $Reseller
-     * @return NameWatchInfo
+     * @return \ascio\v3\NameWatchInfo
      */
     public function setReseller($Reseller)
     {
@@ -368,7 +370,7 @@ class NameWatchInfo
 
     /**
      * @param ArrayOfstring $Labels
-     * @return NameWatchInfo
+     * @return \ascio\v3\NameWatchInfo
      */
     public function setLabels($Labels)
     {

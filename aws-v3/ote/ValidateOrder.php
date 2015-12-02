@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class ValidateOrder
 {
 
@@ -26,7 +28,7 @@ class ValidateOrder
 
     /**
      * @param AbstractOrderRequest $request
-     * @return ValidateOrder
+     * @return \ascio\v3\ValidateOrder
      */
     public function setRequest($request)
     {

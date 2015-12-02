@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class TreatyOrStatuteMark extends AbstractMark
 {
 
@@ -49,7 +51,7 @@ class TreatyOrStatuteMark extends AbstractMark
 
     /**
      * @param string $Title
-     * @return TreatyOrStatuteMark
+     * @return \ascio\v3\TreatyOrStatuteMark
      */
     public function setTitle($Title)
     {
@@ -67,7 +69,7 @@ class TreatyOrStatuteMark extends AbstractMark
 
     /**
      * @param string $ReferenceNumber
-     * @return TreatyOrStatuteMark
+     * @return \ascio\v3\TreatyOrStatuteMark
      */
     public function setReferenceNumber($ReferenceNumber)
     {
@@ -85,7 +87,7 @@ class TreatyOrStatuteMark extends AbstractMark
 
     /**
      * @param string $Country
-     * @return TreatyOrStatuteMark
+     * @return \ascio\v3\TreatyOrStatuteMark
      */
     public function setCountry($Country)
     {
@@ -103,7 +105,7 @@ class TreatyOrStatuteMark extends AbstractMark
 
     /**
      * @param string $Region
-     * @return TreatyOrStatuteMark
+     * @return \ascio\v3\TreatyOrStatuteMark
      */
     public function setRegion($Region)
     {
@@ -129,7 +131,7 @@ class TreatyOrStatuteMark extends AbstractMark
 
     /**
      * @param \DateTime $ProtectionDate
-     * @return TreatyOrStatuteMark
+     * @return \ascio\v3\TreatyOrStatuteMark
      */
     public function setProtectionDate(\DateTime $ProtectionDate)
     {
@@ -155,7 +157,7 @@ class TreatyOrStatuteMark extends AbstractMark
 
     /**
      * @param \DateTime $ExecutionDate
-     * @return TreatyOrStatuteMark
+     * @return \ascio\v3\TreatyOrStatuteMark
      */
     public function setExecutionDate(\DateTime $ExecutionDate)
     {

@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class Extensions
 {
 
@@ -26,7 +28,7 @@ class Extensions
 
     /**
      * @param KeyValue[] $KeyValue
-     * @return Extensions
+     * @return \ascio\v3\Extensions
      */
     public function setKeyValue(array $KeyValue)
     {

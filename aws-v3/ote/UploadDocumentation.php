@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class UploadDocumentation
 {
 
@@ -26,7 +28,7 @@ class UploadDocumentation
 
     /**
      * @param UploadDocumentationRequest $request
-     * @return UploadDocumentation
+     * @return \ascio\v3\UploadDocumentation
      */
     public function setRequest($request)
     {

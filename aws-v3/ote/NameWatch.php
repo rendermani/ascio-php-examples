@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class NameWatch
 {
 
@@ -78,7 +80,7 @@ class NameWatch
 
     /**
      * @param string $Handle
-     * @return NameWatch
+     * @return \ascio\v3\NameWatch
      */
     public function setHandle($Handle)
     {
@@ -96,7 +98,7 @@ class NameWatch
 
     /**
      * @param string $Name
-     * @return NameWatch
+     * @return \ascio\v3\NameWatch
      */
     public function setName($Name)
     {
@@ -114,7 +116,7 @@ class NameWatch
 
     /**
      * @param NotificationFrequencyType $NotificationFrequency
-     * @return NameWatch
+     * @return \ascio\v3\NameWatch
      */
     public function setNotificationFrequency($NotificationFrequency)
     {
@@ -132,7 +134,7 @@ class NameWatch
 
     /**
      * @param int $Tier
-     * @return NameWatch
+     * @return \ascio\v3\NameWatch
      */
     public function setTier($Tier)
     {
@@ -150,7 +152,7 @@ class NameWatch
 
     /**
      * @param string $EmailNotification1
-     * @return NameWatch
+     * @return \ascio\v3\NameWatch
      */
     public function setEmailNotification1($EmailNotification1)
     {
@@ -168,7 +170,7 @@ class NameWatch
 
     /**
      * @param string $EmailNotification2
-     * @return NameWatch
+     * @return \ascio\v3\NameWatch
      */
     public function setEmailNotification2($EmailNotification2)
     {
@@ -186,7 +188,7 @@ class NameWatch
 
     /**
      * @param string $EmailNotification3
-     * @return NameWatch
+     * @return \ascio\v3\NameWatch
      */
     public function setEmailNotification3($EmailNotification3)
     {
@@ -204,7 +206,7 @@ class NameWatch
 
     /**
      * @param string $EmailNotification4
-     * @return NameWatch
+     * @return \ascio\v3\NameWatch
      */
     public function setEmailNotification4($EmailNotification4)
     {
@@ -222,7 +224,7 @@ class NameWatch
 
     /**
      * @param string $EmailNotification5
-     * @return NameWatch
+     * @return \ascio\v3\NameWatch
      */
     public function setEmailNotification5($EmailNotification5)
     {
@@ -240,7 +242,7 @@ class NameWatch
 
     /**
      * @param Registrant $Owner
-     * @return NameWatch
+     * @return \ascio\v3\NameWatch
      */
     public function setOwner($Owner)
     {
@@ -258,7 +260,7 @@ class NameWatch
 
     /**
      * @param Contact $Reseller
-     * @return NameWatch
+     * @return \ascio\v3\NameWatch
      */
     public function setReseller($Reseller)
     {

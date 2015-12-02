@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class Registrant extends Contact
 {
 
@@ -29,7 +31,7 @@ class Registrant extends Contact
 
     /**
      * @param string $VatNumber
-     * @return Registrant
+     * @return \ascio\v3\Registrant
      */
     public function setVatNumber($VatNumber)
     {
@@ -47,7 +49,7 @@ class Registrant extends Contact
 
     /**
      * @param string $NexusCategory
-     * @return Registrant
+     * @return \ascio\v3\Registrant
      */
     public function setNexusCategory($NexusCategory)
     {

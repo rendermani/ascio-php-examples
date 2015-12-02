@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class Defensive
 {
 
@@ -69,7 +71,7 @@ class Defensive
 
     /**
      * @param string $Handle
-     * @return Defensive
+     * @return \ascio\v3\Defensive
      */
     public function setHandle($Handle)
     {
@@ -87,7 +89,7 @@ class Defensive
 
     /**
      * @param string $Name
-     * @return Defensive
+     * @return \ascio\v3\Defensive
      */
     public function setName($Name)
     {
@@ -105,7 +107,7 @@ class Defensive
 
     /**
      * @param string $MarkHandle
-     * @return Defensive
+     * @return \ascio\v3\Defensive
      */
     public function setMarkHandle($MarkHandle)
     {
@@ -123,7 +125,7 @@ class Defensive
 
     /**
      * @param string $AuthInfo
-     * @return Defensive
+     * @return \ascio\v3\Defensive
      */
     public function setAuthInfo($AuthInfo)
     {
@@ -141,7 +143,7 @@ class Defensive
 
     /**
      * @param string $Encoding
-     * @return Defensive
+     * @return \ascio\v3\Defensive
      */
     public function setEncoding($Encoding)
     {
@@ -159,7 +161,7 @@ class Defensive
 
     /**
      * @param Registrant $Owner
-     * @return Defensive
+     * @return \ascio\v3\Defensive
      */
     public function setOwner($Owner)
     {
@@ -177,7 +179,7 @@ class Defensive
 
     /**
      * @param Contact $Admin
-     * @return Defensive
+     * @return \ascio\v3\Defensive
      */
     public function setAdmin($Admin)
     {
@@ -195,7 +197,7 @@ class Defensive
 
     /**
      * @param Contact $Tech
-     * @return Defensive
+     * @return \ascio\v3\Defensive
      */
     public function setTech($Tech)
     {
@@ -213,7 +215,7 @@ class Defensive
 
     /**
      * @param Contact $Billing
-     * @return Defensive
+     * @return \ascio\v3\Defensive
      */
     public function setBilling($Billing)
     {
@@ -231,7 +233,7 @@ class Defensive
 
     /**
      * @param Contact $Reseller
-     * @return Defensive
+     * @return \ascio\v3\Defensive
      */
     public function setReseller($Reseller)
     {

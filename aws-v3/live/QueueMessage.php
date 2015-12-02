@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class QueueMessage
 {
 
@@ -82,7 +84,7 @@ class QueueMessage
 
     /**
      * @param ArrayOfAttachment $Attachments
-     * @return QueueMessage
+     * @return \ascio\v3\QueueMessage
      */
     public function setAttachments($Attachments)
     {
@@ -100,7 +102,7 @@ class QueueMessage
 
     /**
      * @param ArrayOfErrorCode $ErrorCodes
-     * @return QueueMessage
+     * @return \ascio\v3\QueueMessage
      */
     public function setErrorCodes($ErrorCodes)
     {
@@ -118,7 +120,7 @@ class QueueMessage
 
     /**
      * @param int $Id
-     * @return QueueMessage
+     * @return \ascio\v3\QueueMessage
      */
     public function setId($Id)
     {
@@ -136,7 +138,7 @@ class QueueMessage
 
     /**
      * @param string $Message
-     * @return QueueMessage
+     * @return \ascio\v3\QueueMessage
      */
     public function setMessage($Message)
     {
@@ -154,7 +156,7 @@ class QueueMessage
 
     /**
      * @param MessageType $MessageType
-     * @return QueueMessage
+     * @return \ascio\v3\QueueMessage
      */
     public function setMessageType($MessageType)
     {
@@ -172,7 +174,7 @@ class QueueMessage
 
     /**
      * @param string $ObjectHandle
-     * @return QueueMessage
+     * @return \ascio\v3\QueueMessage
      */
     public function setObjectHandle($ObjectHandle)
     {
@@ -190,7 +192,7 @@ class QueueMessage
 
     /**
      * @param string $ObjectName
-     * @return QueueMessage
+     * @return \ascio\v3\QueueMessage
      */
     public function setObjectName($ObjectName)
     {
@@ -208,7 +210,7 @@ class QueueMessage
 
     /**
      * @param ObjectType $ObjectType
-     * @return QueueMessage
+     * @return \ascio\v3\QueueMessage
      */
     public function setObjectType($ObjectType)
     {
@@ -226,7 +228,7 @@ class QueueMessage
 
     /**
      * @param string $OrderId
-     * @return QueueMessage
+     * @return \ascio\v3\QueueMessage
      */
     public function setOrderId($OrderId)
     {
@@ -244,7 +246,7 @@ class QueueMessage
 
     /**
      * @param OrderStatusType $OrderStatus
-     * @return QueueMessage
+     * @return \ascio\v3\QueueMessage
      */
     public function setOrderStatus($OrderStatus)
     {
@@ -262,7 +264,7 @@ class QueueMessage
 
     /**
      * @param OrderType $OrderType
-     * @return QueueMessage
+     * @return \ascio\v3\QueueMessage
      */
     public function setOrderType($OrderType)
     {

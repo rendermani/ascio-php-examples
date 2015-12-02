@@ -1,206 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.ascio.com/2013/02/AscioService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AscioService" targetNamespace="http://www.ascio.com/2013/02/AscioService">
   <wsdl:types>
-    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.ascio.com/2013/02/AscioService">
-      <xs:import namespace="http://www.ascio.com/2013/02" />
-      <xs:element name="CreateOrder">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:AbstractOrderRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="CreateOrderResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="CreateOrderResult" nillable="true" type="q1:CreateOrderResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="ValidateOrder">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:AbstractOrderRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="ValidateOrderResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="ValidateOrderResult" nillable="true" type="q1:ValidateOrderResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetOrder">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetOrderRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetOrderResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetOrderResult" nillable="true" type="q1:GetOrderResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetOrders">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetOrdersRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetOrdersResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetOrdersResult" nillable="true" type="q1:GetOrdersResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetMark">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetMarkRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetMarkResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetMarkResult" nillable="true" type="q1:GetMarkResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetDefensive">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetDefensiveRequest"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetDefensiveResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetDefensiveResult" nillable="true" type="q1:GetDefensiveResponse"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-         <xs:element name="GetNameWatch">
-            <xs:complexType>
-               <xs:sequence>
-                  <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetNameWatchRequest" />
-               </xs:sequence>
-            </xs:complexType>
-         </xs:element>
-         <xs:element name="GetNameWatchResponse">
-            <xs:complexType>
-               <xs:sequence>
-                  <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetNameWatchResult" nillable="true" type="q1:GetNameWatchResponse" />
-               </xs:sequence>
-            </xs:complexType>
-         </xs:element>
-      <xs:element name="GetSslCertificate">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetSslCertificateRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetSslCertificateResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetSslCertificateResult" nillable="true" type="q1:GetSslCertificateResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetMessages">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetMessagesRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetMessagesResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetMessagesResult" nillable="true" type="q1:GetMessagesResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="PollQueue">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:PollQueueRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="PollQueueResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="PollQueueResult" nillable="true" type="q1:PollQueueResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="AckQueueMessage">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:AckQueueMessageRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="AckQueueMessageResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="AckQueueMessageResult" nillable="true" type="q1:AckQueueMessageResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetQueueMessage">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetQueueMessageRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetQueueMessageResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetQueueMessageResult" nillable="true" type="q1:GetQueueMessageResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="UploadDocumentation">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:UploadDocumentationRequest"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="UploadDocumentationResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="UploadDocumentationResult" nillable="true" type="q1:UploadDocumentationResponse"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="UploadMessage">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:UploadMessageRequest"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="UploadMessageResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="UploadMessageResult" nillable="true" type="q1:UploadMessageResponse"/>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-    </xs:schema>
-    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/">
+     <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/">
       <xs:element name="anyType" nillable="true" type="xs:anyType" />
       <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
       <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
@@ -305,6 +106,8 @@
               <xs:documentation>Name of the mark</xs:documentation>
             </xs:annotation>
           </xs:element>
+	  <xs:element minOccurs="0" name="MarkId" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="AuthInfo" nillable="true" type="xs:string"/>
           <xs:element minOccurs="0" name="ServiceType" nillable="true" type="tns:MarkServiceType" />
           <xs:element minOccurs="0" name="GoodsAndServicesDescription" nillable="true" type="xs:string">
             <xs:annotation>
@@ -653,15 +456,6 @@
         </xs:restriction>
       </xs:simpleType>
       <xs:element name="MarkOrderDocType" nillable="true" type="tns:MarkOrderDocType" />
-      <xs:complexType name="DefensiveOrderRequest">
-        <xs:complexContent mixed="false">
-          <xs:extension base="tns:AbstractOrderRequest">
-            <xs:sequence>
-              <xs:element minOccurs="0" name="Defensive" nillable="true" type="tns:Defensive"/>
-            </xs:sequence>
-          </xs:extension>
-        </xs:complexContent>
-      </xs:complexType>
       <xs:complexType name="NameWatchOrderRequest">
             <xs:complexContent mixed="false">
                <xs:extension base="tns:AbstractOrderRequest">
@@ -1123,7 +917,8 @@
             </xs:sequence>
           </xs:extension>
         </xs:complexContent>
-      </xs:complexType>      
+      </xs:complexType>
+      <xs:element name="PollQueueResponse" nillable="true" type="tns:PollQueueResponse" />
       <xs:complexType name="QueueMessage">
         <xs:sequence>
           <xs:element minOccurs="0" name="Attachments" nillable="true" type="tns:ArrayOfAttachment" />
@@ -1230,6 +1025,206 @@
       </xs:complexType>
       <xs:element name="ArrayOfint" nillable="true" type="tns:ArrayOfint" />
     </xs:schema>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.ascio.com/2013/02/AscioService">
+      <xs:import namespace="http://www.ascio.com/2013/02" />
+      <xs:element name="CreateOrder">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:AbstractOrderRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateOrderResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="CreateOrderResult" nillable="true" type="q1:CreateOrderResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ValidateOrder">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:AbstractOrderRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ValidateOrderResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="ValidateOrderResult" nillable="true" type="q1:ValidateOrderResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetOrder">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetOrderRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetOrderResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetOrderResult" nillable="true" type="q1:GetOrderResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetOrders">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetOrdersRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetOrdersResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetOrdersResult" nillable="true" type="q1:GetOrdersResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetMark">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetMarkRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetMarkResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetMarkResult" nillable="true" type="q1:GetMarkResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetDefensive">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetDefensiveRequest"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetDefensiveResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetDefensiveResult" nillable="true" type="q1:GetDefensiveResponse"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetNameWatch">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetNameWatchRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetNameWatchResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetNameWatchResult" nillable="true" type="q1:GetNameWatchResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetSslCertificate">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetSslCertificateRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetSslCertificateResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetSslCertificateResult" nillable="true" type="q1:GetSslCertificateResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetMessages">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetMessagesRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetMessagesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetMessagesResult" nillable="true" type="q1:GetMessagesResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PollQueue">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:PollQueueRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PollQueueResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="PollQueueResult" nillable="true" type="q1:PollQueueResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AckQueueMessage">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:AckQueueMessageRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AckQueueMessageResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="AckQueueMessageResult" nillable="true" type="q1:AckQueueMessageResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetQueueMessage">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetQueueMessageRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetQueueMessageResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetQueueMessageResult" nillable="true" type="q1:GetQueueMessageResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UploadDocumentation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:UploadDocumentationRequest"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UploadDocumentationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="UploadDocumentationResult" nillable="true" type="q1:UploadDocumentationResponse"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UploadMessage">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:UploadMessageRequest"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UploadMessageResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="UploadMessageResult" nillable="true" type="q1:UploadMessageResponse"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    
   </wsdl:types>
   <wsdl:message name="DefaultInputMessageHeaders">
     <wsdl:part xmlns:q1="http://www.ascio.com/2013/02" name="SecurityHeaderDetails" element="q1:SecurityHeaderDetails" />

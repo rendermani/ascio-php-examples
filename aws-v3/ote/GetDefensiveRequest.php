@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class GetDefensiveRequest
 {
 
@@ -24,7 +26,7 @@ class GetDefensiveRequest
 
     /**
      * @param string $Handle
-     * @return GetDefensiveRequest
+     * @return \ascio\v3\GetDefensiveRequest
      */
     public function setHandle($Handle)
     {

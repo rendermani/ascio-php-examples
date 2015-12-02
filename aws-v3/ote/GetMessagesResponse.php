@@ -1,36 +1,40 @@
 <?php
 
+namespace ascio\v3;
+
 class GetMessagesResponse extends AbstractResponse
 {
 
     /**
-     * @var ArrayOfMessage $Messages
+     * @var GetMessagesResponse $GetMessagesResult
      */
-    protected $Messages = null;
+    protected $GetMessagesResult = null;
 
     /**
      * @param int $ResultCode
+     * @param GetMessagesResponse $GetMessagesResult
      */
-    public function __construct($ResultCode)
+    public function __construct($ResultCode, $GetMessagesResult)
     {
       parent::__construct($ResultCode);
+      $this->GetMessagesResult = $GetMessagesResult;
     }
 
     /**
-     * @return ArrayOfMessage
-     */
-    public function getMessages()
-    {
-      return $this->Messages;
-    }
-
-    /**
-     * @param ArrayOfMessage $Messages
      * @return GetMessagesResponse
      */
-    public function setMessages($Messages)
+    public function getGetMessagesResult()
     {
-      $this->Messages = $Messages;
+      return $this->GetMessagesResult;
+    }
+
+    /**
+     * @param GetMessagesResponse $GetMessagesResult
+     * @return \ascio\v3\GetMessagesResponse
+     */
+    public function setGetMessagesResult($GetMessagesResult)
+    {
+      $this->GetMessagesResult = $GetMessagesResult;
       return $this;
     }
 

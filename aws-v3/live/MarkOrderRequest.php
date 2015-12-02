@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class MarkOrderRequest extends AbstractOrderRequest
 {
 
@@ -31,7 +33,7 @@ class MarkOrderRequest extends AbstractOrderRequest
 
     /**
      * @param AbstractMark $Mark
-     * @return MarkOrderRequest
+     * @return \ascio\v3\MarkOrderRequest
      */
     public function setMark($Mark)
     {
@@ -49,7 +51,7 @@ class MarkOrderRequest extends AbstractOrderRequest
 
     /**
      * @param ArrayOfMarkOrderDocument $Documents
-     * @return MarkOrderRequest
+     * @return \ascio\v3\MarkOrderRequest
      */
     public function setDocuments($Documents)
     {

@@ -1,38 +1,40 @@
 <?php
 
+namespace ascio\v3;
+
 class UploadMessageResponse extends AbstractResponse
 {
 
     /**
-     * @var int $MessageId
+     * @var UploadMessageResponse $UploadMessageResult
      */
-    protected $MessageId = null;
+    protected $UploadMessageResult = null;
 
     /**
      * @param int $ResultCode
-     * @param int $MessageId
+     * @param UploadMessageResponse $UploadMessageResult
      */
-    public function __construct($ResultCode, $MessageId)
+    public function __construct($ResultCode, $UploadMessageResult)
     {
       parent::__construct($ResultCode);
-      $this->MessageId = $MessageId;
+      $this->UploadMessageResult = $UploadMessageResult;
     }
 
     /**
-     * @return int
-     */
-    public function getMessageId()
-    {
-      return $this->MessageId;
-    }
-
-    /**
-     * @param int $MessageId
      * @return UploadMessageResponse
      */
-    public function setMessageId($MessageId)
+    public function getUploadMessageResult()
     {
-      $this->MessageId = $MessageId;
+      return $this->UploadMessageResult;
+    }
+
+    /**
+     * @param UploadMessageResponse $UploadMessageResult
+     * @return \ascio\v3\UploadMessageResponse
+     */
+    public function setUploadMessageResult($UploadMessageResult)
+    {
+      $this->UploadMessageResult = $UploadMessageResult;
       return $this;
     }
 

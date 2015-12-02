@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class NameWatchOrderRequest extends AbstractOrderRequest
 {
 
@@ -26,7 +28,7 @@ class NameWatchOrderRequest extends AbstractOrderRequest
 
     /**
      * @param NameWatch $NameWatch
-     * @return NameWatchOrderRequest
+     * @return \ascio\v3\NameWatchOrderRequest
      */
     public function setNameWatch($NameWatch)
     {

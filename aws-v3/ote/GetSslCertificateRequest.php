@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class GetSslCertificateRequest
 {
 
@@ -24,7 +26,7 @@ class GetSslCertificateRequest
 
     /**
      * @param string $Handle
-     * @return GetSslCertificateRequest
+     * @return \ascio\v3\GetSslCertificateRequest
      */
     public function setHandle($Handle)
     {

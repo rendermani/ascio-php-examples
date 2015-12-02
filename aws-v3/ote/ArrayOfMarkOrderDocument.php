@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class ArrayOfMarkOrderDocument
 {
 
@@ -24,7 +26,7 @@ class ArrayOfMarkOrderDocument
 
     /**
      * @param MarkOrderDocument[] $MarkOrderDocument
-     * @return ArrayOfMarkOrderDocument
+     * @return \ascio\v3\ArrayOfMarkOrderDocument
      */
     public function setMarkOrderDocument(array $MarkOrderDocument)
     {

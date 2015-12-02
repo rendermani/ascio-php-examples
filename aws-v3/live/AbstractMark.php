@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 abstract class AbstractMark
 {
 
@@ -12,6 +14,16 @@ abstract class AbstractMark
      * @var string $MarkName
      */
     protected $MarkName = null;
+
+    /**
+     * @var string $MarkId
+     */
+    protected $MarkId = null;
+
+    /**
+     * @var string $AuthInfo
+     */
+    protected $AuthInfo = null;
 
     /**
      * @var MarkServiceType $ServiceType
@@ -89,7 +101,7 @@ abstract class AbstractMark
 
     /**
      * @param string $Handle
-     * @return AbstractMark
+     * @return \ascio\v3\AbstractMark
      */
     public function setHandle($Handle)
     {
@@ -107,11 +119,47 @@ abstract class AbstractMark
 
     /**
      * @param string $MarkName
-     * @return AbstractMark
+     * @return \ascio\v3\AbstractMark
      */
     public function setMarkName($MarkName)
     {
       $this->MarkName = $MarkName;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMarkId()
+    {
+      return $this->MarkId;
+    }
+
+    /**
+     * @param string $MarkId
+     * @return \ascio\v3\AbstractMark
+     */
+    public function setMarkId($MarkId)
+    {
+      $this->MarkId = $MarkId;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAuthInfo()
+    {
+      return $this->AuthInfo;
+    }
+
+    /**
+     * @param string $AuthInfo
+     * @return \ascio\v3\AbstractMark
+     */
+    public function setAuthInfo($AuthInfo)
+    {
+      $this->AuthInfo = $AuthInfo;
       return $this;
     }
 
@@ -125,7 +173,7 @@ abstract class AbstractMark
 
     /**
      * @param MarkServiceType $ServiceType
-     * @return AbstractMark
+     * @return \ascio\v3\AbstractMark
      */
     public function setServiceType($ServiceType)
     {
@@ -143,7 +191,7 @@ abstract class AbstractMark
 
     /**
      * @param string $GoodsAndServicesDescription
-     * @return AbstractMark
+     * @return \ascio\v3\AbstractMark
      */
     public function setGoodsAndServicesDescription($GoodsAndServicesDescription)
     {
@@ -161,7 +209,7 @@ abstract class AbstractMark
 
     /**
      * @param ArrayOfstring $Labels
-     * @return AbstractMark
+     * @return \ascio\v3\AbstractMark
      */
     public function setLabels($Labels)
     {
@@ -179,7 +227,7 @@ abstract class AbstractMark
 
     /**
      * @param string $ClaimEmailNotification1
-     * @return AbstractMark
+     * @return \ascio\v3\AbstractMark
      */
     public function setClaimEmailNotification1($ClaimEmailNotification1)
     {
@@ -197,7 +245,7 @@ abstract class AbstractMark
 
     /**
      * @param string $ClaimEmailNotification2
-     * @return AbstractMark
+     * @return \ascio\v3\AbstractMark
      */
     public function setClaimEmailNotification2($ClaimEmailNotification2)
     {
@@ -215,7 +263,7 @@ abstract class AbstractMark
 
     /**
      * @param string $ClaimEmailNotification3
-     * @return AbstractMark
+     * @return \ascio\v3\AbstractMark
      */
     public function setClaimEmailNotification3($ClaimEmailNotification3)
     {
@@ -233,7 +281,7 @@ abstract class AbstractMark
 
     /**
      * @param string $ClaimEmailNotification4
-     * @return AbstractMark
+     * @return \ascio\v3\AbstractMark
      */
     public function setClaimEmailNotification4($ClaimEmailNotification4)
     {
@@ -251,7 +299,7 @@ abstract class AbstractMark
 
     /**
      * @param string $ClaimEmailNotification5
-     * @return AbstractMark
+     * @return \ascio\v3\AbstractMark
      */
     public function setClaimEmailNotification5($ClaimEmailNotification5)
     {
@@ -269,7 +317,7 @@ abstract class AbstractMark
 
     /**
      * @param NotificationFrequencyType $NotificationFrequency
-     * @return AbstractMark
+     * @return \ascio\v3\AbstractMark
      */
     public function setNotificationFrequency($NotificationFrequency)
     {
@@ -287,7 +335,7 @@ abstract class AbstractMark
 
     /**
      * @param Registrant $Owner
-     * @return AbstractMark
+     * @return \ascio\v3\AbstractMark
      */
     public function setOwner($Owner)
     {
@@ -305,7 +353,7 @@ abstract class AbstractMark
 
     /**
      * @param Contact $Reseller
-     * @return AbstractMark
+     * @return \ascio\v3\AbstractMark
      */
     public function setReseller($Reseller)
     {
@@ -323,7 +371,7 @@ abstract class AbstractMark
 
     /**
      * @param Extensions $Extensions
-     * @return AbstractMark
+     * @return \ascio\v3\AbstractMark
      */
     public function setExtensions($Extensions)
     {

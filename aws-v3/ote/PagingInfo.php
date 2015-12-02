@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class PagingInfo
 {
 
@@ -33,7 +35,7 @@ class PagingInfo
 
     /**
      * @param int $PageIndex
-     * @return PagingInfo
+     * @return \ascio\v3\PagingInfo
      */
     public function setPageIndex($PageIndex)
     {
@@ -51,7 +53,7 @@ class PagingInfo
 
     /**
      * @param int $PageSize
-     * @return PagingInfo
+     * @return \ascio\v3\PagingInfo
      */
     public function setPageSize($PageSize)
     {

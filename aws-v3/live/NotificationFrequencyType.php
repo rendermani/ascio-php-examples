@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class NotificationFrequencyType
 {
     const __default = 'Daily';

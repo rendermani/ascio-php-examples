@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class MarkOrderDocument extends Attachment
 {
 
@@ -27,7 +29,7 @@ class MarkOrderDocument extends Attachment
 
     /**
      * @param MarkOrderDocType $DocType
-     * @return MarkOrderDocument
+     * @return \ascio\v3\MarkOrderDocument
      */
     public function setDocType($DocType)
     {

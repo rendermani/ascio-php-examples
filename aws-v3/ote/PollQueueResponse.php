@@ -1,61 +1,40 @@
 <?php
 
+namespace ascio\v3;
+
 class PollQueueResponse extends AbstractResponse
 {
 
     /**
-     * @var int $TotalCount
+     * @var PollQueueResponse $PollQueueResult
      */
-    protected $TotalCount = null;
-
-    /**
-     * @var QueueMessage $Message
-     */
-    protected $Message = null;
+    protected $PollQueueResult = null;
 
     /**
      * @param int $ResultCode
-     * @param int $TotalCount
+     * @param PollQueueResponse $PollQueueResult
      */
-    public function __construct($ResultCode, $TotalCount)
+    public function __construct($ResultCode, $PollQueueResult)
     {
       parent::__construct($ResultCode);
-      $this->TotalCount = $TotalCount;
+      $this->PollQueueResult = $PollQueueResult;
     }
 
     /**
-     * @return int
-     */
-    public function getTotalCount()
-    {
-      return $this->TotalCount;
-    }
-
-    /**
-     * @param int $TotalCount
      * @return PollQueueResponse
      */
-    public function setTotalCount($TotalCount)
+    public function getPollQueueResult()
     {
-      $this->TotalCount = $TotalCount;
-      return $this;
+      return $this->PollQueueResult;
     }
 
     /**
-     * @return QueueMessage
+     * @param PollQueueResponse $PollQueueResult
+     * @return \ascio\v3\PollQueueResponse
      */
-    public function getMessage()
+    public function setPollQueueResult($PollQueueResult)
     {
-      return $this->Message;
-    }
-
-    /**
-     * @param QueueMessage $Message
-     * @return PollQueueResponse
-     */
-    public function setMessage($Message)
-    {
-      $this->Message = $Message;
+      $this->PollQueueResult = $PollQueueResult;
       return $this;
     }
 

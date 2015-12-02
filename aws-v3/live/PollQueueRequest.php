@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class PollQueueRequest
 {
 
@@ -29,7 +31,7 @@ class PollQueueRequest
 
     /**
      * @param MessageType $MessageType
-     * @return PollQueueRequest
+     * @return \ascio\v3\PollQueueRequest
      */
     public function setMessageType($MessageType)
     {
@@ -47,7 +49,7 @@ class PollQueueRequest
 
     /**
      * @param ObjectType $ObjectType
-     * @return PollQueueRequest
+     * @return \ascio\v3\PollQueueRequest
      */
     public function setObjectType($ObjectType)
     {

@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 abstract class AbstractOrderRequest
 {
 
@@ -51,7 +53,7 @@ abstract class AbstractOrderRequest
 
     /**
      * @param OrderType $Type
-     * @return AbstractOrderRequest
+     * @return \ascio\v3\AbstractOrderRequest
      */
     public function setType($Type)
     {
@@ -69,7 +71,7 @@ abstract class AbstractOrderRequest
 
     /**
      * @param int $Period
-     * @return AbstractOrderRequest
+     * @return \ascio\v3\AbstractOrderRequest
      */
     public function setPeriod($Period)
     {
@@ -87,7 +89,7 @@ abstract class AbstractOrderRequest
 
     /**
      * @param string $TransactionComment
-     * @return AbstractOrderRequest
+     * @return \ascio\v3\AbstractOrderRequest
      */
     public function setTransactionComment($TransactionComment)
     {
@@ -105,7 +107,7 @@ abstract class AbstractOrderRequest
 
     /**
      * @param string $Comments
-     * @return AbstractOrderRequest
+     * @return \ascio\v3\AbstractOrderRequest
      */
     public function setComments($Comments)
     {
@@ -123,7 +125,7 @@ abstract class AbstractOrderRequest
 
     /**
      * @param string $Documentation
-     * @return AbstractOrderRequest
+     * @return \ascio\v3\AbstractOrderRequest
      */
     public function setDocumentation($Documentation)
     {
@@ -141,7 +143,7 @@ abstract class AbstractOrderRequest
 
     /**
      * @param string $Options
-     * @return AbstractOrderRequest
+     * @return \ascio\v3\AbstractOrderRequest
      */
     public function setOptions($Options)
     {

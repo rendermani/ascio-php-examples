@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class SearchOrderSortType
 {
     const __default = 'CreatedAsc';

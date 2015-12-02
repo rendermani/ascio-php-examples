@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class ArrayOfOrderType
 {
 
@@ -26,7 +28,7 @@ class ArrayOfOrderType
 
     /**
      * @param OrderType[] $OrderType
-     * @return ArrayOfOrderType
+     * @return \ascio\v3\ArrayOfOrderType
      */
     public function setOrderType(array $OrderType)
     {

@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class UploadMessageRequest
 {
 
@@ -29,7 +31,7 @@ class UploadMessageRequest
 
     /**
      * @param string $OrderId
-     * @return UploadMessageRequest
+     * @return \ascio\v3\UploadMessageRequest
      */
     public function setOrderId($OrderId)
     {
@@ -47,7 +49,7 @@ class UploadMessageRequest
 
     /**
      * @param Message $Message
-     * @return UploadMessageRequest
+     * @return \ascio\v3\UploadMessageRequest
      */
     public function setMessage($Message)
     {

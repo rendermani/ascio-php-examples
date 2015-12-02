@@ -1,36 +1,40 @@
 <?php
 
+namespace ascio\v3;
+
 class CreateOrderResponse extends AbstractResponse
 {
 
     /**
-     * @var OrderInfo $OrderInfo
+     * @var CreateOrderResponse $CreateOrderResult
      */
-    protected $OrderInfo = null;
+    protected $CreateOrderResult = null;
 
     /**
      * @param int $ResultCode
+     * @param CreateOrderResponse $CreateOrderResult
      */
-    public function __construct($ResultCode)
+    public function __construct($ResultCode, $CreateOrderResult)
     {
       parent::__construct($ResultCode);
+      $this->CreateOrderResult = $CreateOrderResult;
     }
 
     /**
-     * @return OrderInfo
-     */
-    public function getOrderInfo()
-    {
-      return $this->OrderInfo;
-    }
-
-    /**
-     * @param OrderInfo $OrderInfo
      * @return CreateOrderResponse
      */
-    public function setOrderInfo($OrderInfo)
+    public function getCreateOrderResult()
     {
-      $this->OrderInfo = $OrderInfo;
+      return $this->CreateOrderResult;
+    }
+
+    /**
+     * @param CreateOrderResponse $CreateOrderResult
+     * @return \ascio\v3\CreateOrderResponse
+     */
+    public function setCreateOrderResult($CreateOrderResult)
+    {
+      $this->CreateOrderResult = $CreateOrderResult;
       return $this;
     }
 

@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class ArrayOfint
 {
 
@@ -26,7 +28,7 @@ class ArrayOfint
 
     /**
      * @param int[] $int
-     * @return ArrayOfint
+     * @return \ascio\v3\ArrayOfint
      */
     public function setInt(array $int)
     {

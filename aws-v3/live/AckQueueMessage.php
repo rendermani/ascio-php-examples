@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class AckQueueMessage
 {
 
@@ -26,7 +28,7 @@ class AckQueueMessage
 
     /**
      * @param AckQueueMessageRequest $request
-     * @return AckQueueMessage
+     * @return \ascio\v3\AckQueueMessage
      */
     public function setRequest($request)
     {

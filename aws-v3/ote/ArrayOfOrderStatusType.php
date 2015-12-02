@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class ArrayOfOrderStatusType
 {
 
@@ -26,7 +28,7 @@ class ArrayOfOrderStatusType
 
     /**
      * @param OrderStatusType[] $OrderStatusType
-     * @return ArrayOfOrderStatusType
+     * @return \ascio\v3\ArrayOfOrderStatusType
      */
     public function setOrderStatusType(array $OrderStatusType)
     {

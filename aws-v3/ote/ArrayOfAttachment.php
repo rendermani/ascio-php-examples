@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class ArrayOfAttachment
 {
 
@@ -24,7 +26,7 @@ class ArrayOfAttachment
 
     /**
      * @param Attachment[] $Attachment
-     * @return ArrayOfAttachment
+     * @return \ascio\v3\ArrayOfAttachment
      */
     public function setAttachment(array $Attachment)
     {

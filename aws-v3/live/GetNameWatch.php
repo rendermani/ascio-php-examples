@@ -1,5 +1,7 @@
 <?php
 
+namespace ascio\v3;
+
 class GetNameWatch
 {
 
@@ -26,7 +28,7 @@ class GetNameWatch
 
     /**
      * @param GetNameWatchRequest $request
-     * @return GetNameWatch
+     * @return \ascio\v3\GetNameWatch
      */
     public function setRequest($request)
     {
