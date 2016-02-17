@@ -7,7 +7,7 @@ use ascio\v3 as ascio;
 $user = 'username';
 $password = 'password';
 
-$header = new SoapHeader('http://www.ascio.com/2013/02','SecurityHeaderDetails', array('Account'=> "", 'Password'=>""), false);
+$header = new SoapHeader('http://www.ascio.com/2013/02','SecurityHeaderDetails', array('Account'=> $user, 'Password'=>$password), false);
 
 // Add the encoding of your system here. ISO-8859-1 means that your values will be converted from ISO-8859-1 to UTF-8.
 // This setting depends on your underlying system
@@ -29,4 +29,3 @@ $createOrder = new ascio\CreateOrder($orderRequest);
 $response = $ascioClient->createOrder($createOrder); 
 
 var_dump($response);
-echo "ok";
