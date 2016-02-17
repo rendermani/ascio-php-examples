@@ -6,35 +6,33 @@ class GetMarkResponse extends AbstractResponse
 {
 
     /**
-     * @var GetMarkResponse $GetMarkResult
+     * @var MarkInfo $MarkInfo
      */
-    protected $GetMarkResult = null;
+    protected $MarkInfo = null;
 
     /**
      * @param int $ResultCode
-     * @param GetMarkResponse $GetMarkResult
      */
-    public function __construct($ResultCode, $GetMarkResult)
+    public function __construct($ResultCode)
     {
       parent::__construct($ResultCode);
-      $this->GetMarkResult = $GetMarkResult;
     }
 
     /**
-     * @return GetMarkResponse
+     * @return MarkInfo
      */
-    public function getGetMarkResult()
+    public function getMarkInfo()
     {
-      return $this->GetMarkResult;
+      return $this->MarkInfo;
     }
 
     /**
-     * @param GetMarkResponse $GetMarkResult
+     * @param MarkInfo $MarkInfo
      * @return \ascio\v3\GetMarkResponse
      */
-    public function setGetMarkResult($GetMarkResult)
+    public function setMarkInfo($MarkInfo)
     {
-      $this->GetMarkResult = $GetMarkResult;
+      $this->MarkInfo = $MarkInfo;
       return $this;
     }
 

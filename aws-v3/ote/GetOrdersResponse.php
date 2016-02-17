@@ -6,35 +6,58 @@ class GetOrdersResponse extends AbstractResponse
 {
 
     /**
-     * @var GetOrdersResponse $GetOrdersResult
+     * @var int $TotalCount
      */
-    protected $GetOrdersResult = null;
+    protected $TotalCount = null;
+
+    /**
+     * @var ArrayOfOrderInfo $OrdersInfo
+     */
+    protected $OrdersInfo = null;
 
     /**
      * @param int $ResultCode
-     * @param GetOrdersResponse $GetOrdersResult
+     * @param int $TotalCount
      */
-    public function __construct($ResultCode, $GetOrdersResult)
+    public function __construct($ResultCode, $TotalCount)
     {
       parent::__construct($ResultCode);
-      $this->GetOrdersResult = $GetOrdersResult;
+      $this->TotalCount = $TotalCount;
     }
 
     /**
-     * @return GetOrdersResponse
+     * @return int
      */
-    public function getGetOrdersResult()
+    public function getTotalCount()
     {
-      return $this->GetOrdersResult;
+      return $this->TotalCount;
     }
 
     /**
-     * @param GetOrdersResponse $GetOrdersResult
+     * @param int $TotalCount
      * @return \ascio\v3\GetOrdersResponse
      */
-    public function setGetOrdersResult($GetOrdersResult)
+    public function setTotalCount($TotalCount)
     {
-      $this->GetOrdersResult = $GetOrdersResult;
+      $this->TotalCount = $TotalCount;
+      return $this;
+    }
+
+    /**
+     * @return ArrayOfOrderInfo
+     */
+    public function getOrdersInfo()
+    {
+      return $this->OrdersInfo;
+    }
+
+    /**
+     * @param ArrayOfOrderInfo $OrdersInfo
+     * @return \ascio\v3\GetOrdersResponse
+     */
+    public function setOrdersInfo($OrdersInfo)
+    {
+      $this->OrdersInfo = $OrdersInfo;
       return $this;
     }
 

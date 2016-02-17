@@ -6,35 +6,33 @@ class GetOrderResponse extends AbstractResponse
 {
 
     /**
-     * @var GetOrderResponse $GetOrderResult
+     * @var OrderInfo $OrderInfo
      */
-    protected $GetOrderResult = null;
+    protected $OrderInfo = null;
 
     /**
      * @param int $ResultCode
-     * @param GetOrderResponse $GetOrderResult
      */
-    public function __construct($ResultCode, $GetOrderResult)
+    public function __construct($ResultCode)
     {
       parent::__construct($ResultCode);
-      $this->GetOrderResult = $GetOrderResult;
     }
 
     /**
-     * @return GetOrderResponse
+     * @return OrderInfo
      */
-    public function getGetOrderResult()
+    public function getOrderInfo()
     {
-      return $this->GetOrderResult;
+      return $this->OrderInfo;
     }
 
     /**
-     * @param GetOrderResponse $GetOrderResult
+     * @param OrderInfo $OrderInfo
      * @return \ascio\v3\GetOrderResponse
      */
-    public function setGetOrderResult($GetOrderResult)
+    public function setOrderInfo($OrderInfo)
     {
-      $this->GetOrderResult = $GetOrderResult;
+      $this->OrderInfo = $OrderInfo;
       return $this;
     }
 

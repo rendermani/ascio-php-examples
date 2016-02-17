@@ -6,35 +6,33 @@ class GetDefensiveResponse extends AbstractResponse
 {
 
     /**
-     * @var GetDefensiveResponse $GetDefensiveResult
+     * @var DefensiveInfo $DefensiveInfo
      */
-    protected $GetDefensiveResult = null;
+    protected $DefensiveInfo = null;
 
     /**
      * @param int $ResultCode
-     * @param GetDefensiveResponse $GetDefensiveResult
      */
-    public function __construct($ResultCode, $GetDefensiveResult)
+    public function __construct($ResultCode)
     {
       parent::__construct($ResultCode);
-      $this->GetDefensiveResult = $GetDefensiveResult;
     }
 
     /**
-     * @return GetDefensiveResponse
+     * @return DefensiveInfo
      */
-    public function getGetDefensiveResult()
+    public function getDefensiveInfo()
     {
-      return $this->GetDefensiveResult;
+      return $this->DefensiveInfo;
     }
 
     /**
-     * @param GetDefensiveResponse $GetDefensiveResult
+     * @param DefensiveInfo $DefensiveInfo
      * @return \ascio\v3\GetDefensiveResponse
      */
-    public function setGetDefensiveResult($GetDefensiveResult)
+    public function setDefensiveInfo($DefensiveInfo)
     {
-      $this->GetDefensiveResult = $GetDefensiveResult;
+      $this->DefensiveInfo = $DefensiveInfo;
       return $this;
     }
 

@@ -71,6 +71,11 @@ class SslCertificateInfo
     protected $Tech = null;
 
     /**
+     * @var ArrayOfstring $SanNames
+     */
+    protected $SanNames = null;
+
+    /**
      * @param \DateTime $Created
      * @param WebServerType $WebServerType
      */
@@ -327,6 +332,24 @@ class SslCertificateInfo
     public function setTech($Tech)
     {
       $this->Tech = $Tech;
+      return $this;
+    }
+
+    /**
+     * @return ArrayOfstring
+     */
+    public function getSanNames()
+    {
+      return $this->SanNames;
+    }
+
+    /**
+     * @param ArrayOfstring $SanNames
+     * @return \ascio\v3\SslCertificateInfo
+     */
+    public function setSanNames($SanNames)
+    {
+      $this->SanNames = $SanNames;
       return $this;
     }
 

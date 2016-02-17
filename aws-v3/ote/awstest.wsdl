@@ -1,220 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.ascio.com/2013/02/AscioService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AscioService" targetNamespace="http://www.ascio.com/2013/02/AscioService">
   <wsdl:types>
-    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.ascio.com/2013/02/AscioService">
-      <xs:import namespace="http://www.ascio.com/2013/02" />
-      <xs:element name="CreateOrder">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:AbstractOrderRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="CreateOrderResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="CreateOrderResult" nillable="true" type="q1:CreateOrderResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="ValidateOrder">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:AbstractOrderRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="ValidateOrderResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="ValidateOrderResult" nillable="true" type="q1:ValidateOrderResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetOrder">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetOrderRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetOrderResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetOrderResult" nillable="true" type="q1:GetOrderResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetOrders">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetOrdersRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetOrdersResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetOrdersResult" nillable="true" type="q1:GetOrdersResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetMark">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetMarkRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetMarkResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetMarkResult" nillable="true" type="q1:GetMarkResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetDefensive">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetDefensiveRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetDefensiveResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetDefensiveResult" nillable="true" type="q1:GetDefensiveResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetNameWatch">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetNameWatchRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetNameWatchResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetNameWatchResult" nillable="true" type="q1:GetNameWatchResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetSslCertificate">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetSslCertificateRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetSslCertificateResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetSslCertificateResult" nillable="true" type="q1:GetSslCertificateResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetAutoInstallSsl">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetAutoInstallSslRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetAutoInstallSslResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetAutoInstallSslResult" nillable="true" type="q1:GetAutoInstallSslResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetMessages">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetMessagesRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetMessagesResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetMessagesResult" nillable="true" type="q1:GetMessagesResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="PollQueue">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:PollQueueRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="PollQueueResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="PollQueueResult" nillable="true" type="q1:PollQueueResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="AckQueueMessage">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:AckQueueMessageRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="AckQueueMessageResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="AckQueueMessageResult" nillable="true" type="q1:AckQueueMessageResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetQueueMessage">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetQueueMessageRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="GetQueueMessageResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetQueueMessageResult" nillable="true" type="q1:GetQueueMessageResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="UploadDocumentation">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:UploadDocumentationRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="UploadDocumentationResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="UploadDocumentationResult" nillable="true" type="q1:UploadDocumentationResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="UploadMessage">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:UploadMessageRequest" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="UploadMessageResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="UploadMessageResult" nillable="true" type="q1:UploadMessageResponse" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-    </xs:schema>
-    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/">
+     <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/">
       <xs:element name="anyType" nillable="true" type="xs:anyType" />
       <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
       <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
@@ -319,7 +106,7 @@
               <xs:documentation>Name of the mark</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element minOccurs="0" name="MarkId" nillable="true" type="xs:string"/>
+	  <xs:element minOccurs="0" name="MarkId" nillable="true" type="xs:string"/>
           <xs:element minOccurs="0" name="AuthInfo" nillable="true" type="xs:string"/>
           <xs:element minOccurs="0" name="ServiceType" nillable="true" type="tns:MarkServiceType" />
           <xs:element minOccurs="0" name="GoodsAndServicesDescription" nillable="true" type="xs:string">
@@ -455,26 +242,6 @@
         </xs:sequence>
       </xs:complexType>
       <xs:element name="Extensions" nillable="true" type="tns:Extensions" />
-      <xs:complexType name="AutoInstallSslOrderRequest">
-        <xs:complexContent mixed="false">
-          <xs:extension base="tns:AbstractOrderRequest">
-            <xs:sequence>
-              <xs:element minOccurs="0" name="AutoInstallSsl" nillable="true" type="tns:AutoInstallSsl"/>
-            </xs:sequence>
-          </xs:extension>
-        </xs:complexContent>
-      </xs:complexType>
-      <xs:element name="AutoInstallSslOrderRequest" nillable="true" type="tns:AutoInstallSslOrderRequest"/>
-      <xs:complexType name="AutoInstallSsl">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string"/>
-          <xs:element minOccurs="0" name="CommonName" nillable="true" type="xs:string"/>
-          <xs:element minOccurs="0" name="ProductCode" nillable="true" type="xs:string"/>
-          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string"/>
-          <xs:element minOccurs="0" name="SanCount" type="xs:int"/>
-        </xs:sequence>
-      </xs:complexType>
-      <xs:element name="AutoInstallSsl" nillable="true" type="tns:AutoInstallSsl"/>
       <xs:complexType name="SslCertificateOrderRequest">
         <xs:complexContent mixed="false">
           <xs:extension base="tns:AbstractOrderRequest">
@@ -496,7 +263,6 @@
           <xs:element minOccurs="0" name="Owner" nillable="true" type="tns:Registrant" />
           <xs:element minOccurs="0" name="Admin" nillable="true" type="tns:Contact" />
           <xs:element minOccurs="0" name="Tech" nillable="true" type="tns:Contact" />
-          <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SanNames" nillable="true" type="q1:ArrayOfstring" />
         </xs:sequence>
       </xs:complexType>
       <xs:element name="SslCertificate" nillable="true" type="tns:SslCertificate" />
@@ -691,56 +457,56 @@
       </xs:simpleType>
       <xs:element name="MarkOrderDocType" nillable="true" type="tns:MarkOrderDocType" />
       <xs:complexType name="NameWatchOrderRequest">
-        <xs:complexContent mixed="false">
-          <xs:extension base="tns:AbstractOrderRequest">
+            <xs:complexContent mixed="false">
+               <xs:extension base="tns:AbstractOrderRequest">
+                  <xs:sequence>
+                     <xs:element minOccurs="0" name="NameWatch" nillable="true" type="tns:NameWatch" />
+                  </xs:sequence>
+               </xs:extension>
+            </xs:complexContent>
+         </xs:complexType>
+         <xs:element name="NameWatchOrderRequest" nillable="true" type="tns:NameWatchOrderRequest" />
+         <xs:complexType name="NameWatch">
             <xs:sequence>
-              <xs:element minOccurs="0" name="NameWatch" nillable="true" type="tns:NameWatch" />
+               <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string" />
+               <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+               <xs:element minOccurs="0" name="NotificationFrequency" type="tns:NotificationFrequencyType" />
+               <xs:element minOccurs="0" name="Tier" type="xs:int" />
+               <xs:element minOccurs="0" name="EmailNotification1" nillable="true" type="xs:string" />
+               <xs:element minOccurs="0" name="EmailNotification2" nillable="true" type="xs:string" />
+               <xs:element minOccurs="0" name="EmailNotification3" nillable="true" type="xs:string" />
+               <xs:element minOccurs="0" name="EmailNotification4" nillable="true" type="xs:string" />
+               <xs:element minOccurs="0" name="EmailNotification5" nillable="true" type="xs:string" />
+               <xs:element minOccurs="0" name="Owner" nillable="true" type="tns:Registrant" />
+               <xs:element minOccurs="0" name="Reseller" nillable="true" type="tns:Contact" />
             </xs:sequence>
-          </xs:extension>
-        </xs:complexContent>
-      </xs:complexType>
-      <xs:element name="NameWatchOrderRequest" nillable="true" type="tns:NameWatchOrderRequest" />
-      <xs:complexType name="NameWatch">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="NotificationFrequency" type="tns:NotificationFrequencyType" />
-          <xs:element minOccurs="0" name="Tier" type="xs:int" />
-          <xs:element minOccurs="0" name="EmailNotification1" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="EmailNotification2" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="EmailNotification3" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="EmailNotification4" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="EmailNotification5" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Owner" nillable="true" type="tns:Registrant" />
-          <xs:element minOccurs="0" name="Reseller" nillable="true" type="tns:Contact" />
-        </xs:sequence>
-      </xs:complexType>
+         </xs:complexType>
       <xs:element name="NameWatch" nillable="true" type="tns:NameWatch" />
       <xs:complexType name="DefensiveOrderRequest">
-        <xs:complexContent mixed="false">
-          <xs:extension base="tns:AbstractOrderRequest">
-            <xs:sequence>
-              <xs:element minOccurs="0" name="Defensive" nillable="true" type="tns:Defensive" />
-            </xs:sequence>
-          </xs:extension>
-        </xs:complexContent>
-      </xs:complexType>
-      <xs:element name="DefensiveOrderRequest" nillable="true" type="tns:DefensiveOrderRequest" />
+            <xs:complexContent mixed="false">
+               <xs:extension base="tns:AbstractOrderRequest">
+                  <xs:sequence>
+                     <xs:element minOccurs="0" name="Defensive" nillable="true" type="tns:Defensive" />
+                  </xs:sequence>
+               </xs:extension>
+            </xs:complexContent>
+         </xs:complexType>
+      <xs:element name="DefensiveOrderRequest" nillable="true" type="tns:DefensiveOrderRequest"/>
       <xs:complexType name="Defensive">
         <xs:sequence>
-          <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="MarkHandle" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="AuthInfo" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Encoding" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Owner" nillable="true" type="tns:Registrant" />
-          <xs:element minOccurs="0" name="Admin" nillable="true" type="tns:Contact" />
-          <xs:element minOccurs="0" name="Tech" nillable="true" type="tns:Contact" />
-          <xs:element minOccurs="0" name="Billing" nillable="true" type="tns:Contact" />
-          <xs:element minOccurs="0" name="Reseller" nillable="true" type="tns:Contact" />
+          <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="MarkHandle" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="AuthInfo" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Encoding" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Owner" nillable="true" type="tns:Registrant"/>
+          <xs:element minOccurs="0" name="Admin" nillable="true" type="tns:Contact"/>
+          <xs:element minOccurs="0" name="Tech" nillable="true" type="tns:Contact"/>
+          <xs:element minOccurs="0" name="Billing" nillable="true" type="tns:Contact"/>
+          <xs:element minOccurs="0" name="Reseller" nillable="true" type="tns:Contact"/>
         </xs:sequence>
       </xs:complexType>
-      <xs:element name="Defensive" nillable="true" type="tns:Defensive" />
+      <xs:element name="Defensive" nillable="true" type="tns:Defensive"/>
       <xs:element name="SecurityHeaderDetails" nillable="true" type="tns:SecurityHeaderDetails" />
       <xs:complexType name="CreateOrderResponse">
         <xs:complexContent mixed="false">
@@ -849,10 +615,10 @@
       <xs:element name="ArrayOfObjectType" nillable="true" type="tns:ArrayOfObjectType" />
       <xs:simpleType name="ObjectType">
         <xs:restriction base="xs:string">
-          <xs:enumeration value="DomainType" />
-          <xs:enumeration value="DefensiveType" />
-          <xs:enumeration value="MarkType" />
-          <xs:enumeration value="NameWatchType" />
+               <xs:enumeration value="DomainType" />
+               <xs:enumeration value="DefensiveType" />
+               <xs:enumeration value="MarkType" />
+               <xs:enumeration value="NameWatchType" />
           <xs:enumeration value="SslCertificateType" />
         </xs:restriction>
       </xs:simpleType>
@@ -920,79 +686,79 @@
       <xs:element name="MarkInfo" nillable="true" type="tns:MarkInfo" />
       <xs:complexType name="GetDefensiveRequest">
         <xs:sequence>
-          <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string"/>
         </xs:sequence>
       </xs:complexType>
-      <xs:element name="GetDefensiveRequest" nillable="true" type="tns:GetDefensiveRequest" />
+      <xs:element name="GetDefensiveRequest" nillable="true" type="tns:GetDefensiveRequest"/>
       <xs:complexType name="GetDefensiveResponse">
         <xs:complexContent mixed="false">
           <xs:extension base="tns:AbstractResponse">
             <xs:sequence>
-              <xs:element minOccurs="0" name="DefensiveInfo" nillable="true" type="tns:DefensiveInfo" />
+              <xs:element minOccurs="0" name="DefensiveInfo" nillable="true" type="tns:DefensiveInfo"/>
             </xs:sequence>
           </xs:extension>
         </xs:complexContent>
       </xs:complexType>
-      <xs:element name="GetDefensiveResponse" nillable="true" type="tns:GetDefensiveResponse" />
+      <xs:element name="GetDefensiveResponse" nillable="true" type="tns:GetDefensiveResponse"/>
       <xs:complexType name="DefensiveInfo">
         <xs:sequence>
-          <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Created" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="Expires" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="AuthInfo" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Encoding" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Owner" nillable="true" type="tns:Registrant" />
-          <xs:element minOccurs="0" name="Admin" nillable="true" type="tns:Contact" />
-          <xs:element minOccurs="0" name="Tech" nillable="true" type="tns:Contact" />
-          <xs:element minOccurs="0" name="Billing" nillable="true" type="tns:Contact" />
-          <xs:element minOccurs="0" name="Reseller" nillable="true" type="tns:Contact" />
+          <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Created" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="Expires" nillable="true" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="AuthInfo" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Encoding" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Owner" nillable="true" type="tns:Registrant"/>
+          <xs:element minOccurs="0" name="Admin" nillable="true" type="tns:Contact"/>
+          <xs:element minOccurs="0" name="Tech" nillable="true" type="tns:Contact"/>
+          <xs:element minOccurs="0" name="Billing" nillable="true" type="tns:Contact"/>
+          <xs:element minOccurs="0" name="Reseller" nillable="true" type="tns:Contact"/>
         </xs:sequence>
       </xs:complexType>
-      <xs:element name="DefensiveInfo" nillable="true" type="tns:DefensiveInfo" />
+      <xs:element name="DefensiveInfo" nillable="true" type="tns:DefensiveInfo"/>
       <xs:complexType name="GetNameWatchRequest">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string" />
-        </xs:sequence>
-      </xs:complexType>
-      <xs:element name="GetNameWatchRequest" nillable="true" type="tns:GetNameWatchRequest" />
-      <xs:complexType name="GetNameWatchResponse">
-        <xs:complexContent mixed="false">
-          <xs:extension base="tns:AbstractResponse">
             <xs:sequence>
-              <xs:element minOccurs="0" name="NameWatchInfo" nillable="true" type="tns:NameWatchInfo" />
+               <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string" />
             </xs:sequence>
-          </xs:extension>
-        </xs:complexContent>
-      </xs:complexType>
-      <xs:element name="GetNameWatchResponse" nillable="true" type="tns:GetNameWatchResponse" />
-      <xs:complexType name="NameWatchInfo">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Created" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="Expires" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="NotificationFrequency" type="tns:NotificationFrequencyType" />
-          <xs:element minOccurs="0" name="Tier" type="xs:int" />
-          <xs:element minOccurs="0" name="EmailNotification1" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="EmailNotification2" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="EmailNotification3" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="EmailNotification4" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="EmailNotification5" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Owner" nillable="true" type="tns:Registrant" />
-          <xs:element minOccurs="0" name="Reseller" nillable="true" type="tns:Contact" />
-          <xs:sequence>
-            <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Labels" nillable="true" type="q1:ArrayOfstring">
-              <xs:annotation>
-                <xs:documentation><![CDATA[List of labels)]]></xs:documentation>
-              </xs:annotation>
-            </xs:element>
-          </xs:sequence>
-        </xs:sequence>
-      </xs:complexType>
-      <xs:element name="NameWatchInfo" nillable="true" type="tns:NameWatchInfo" />
+         </xs:complexType>
+         <xs:element name="GetNameWatchRequest" nillable="true" type="tns:GetNameWatchRequest" />
+         <xs:complexType name="GetNameWatchResponse">
+            <xs:complexContent mixed="false">
+               <xs:extension base="tns:AbstractResponse">
+                  <xs:sequence>
+                     <xs:element minOccurs="0" name="NameWatchInfo" nillable="true" type="tns:NameWatchInfo" />
+                  </xs:sequence>
+               </xs:extension>
+            </xs:complexContent>
+         </xs:complexType>
+         <xs:element name="GetNameWatchResponse" nillable="true" type="tns:GetNameWatchResponse" />
+         <xs:complexType name="NameWatchInfo">
+            <xs:sequence>
+               <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string" />
+               <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+               <xs:element minOccurs="0" name="Created" type="xs:dateTime" />
+               <xs:element minOccurs="0" name="Expires" nillable="true" type="xs:dateTime" />
+               <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+               <xs:element minOccurs="0" name="NotificationFrequency" type="tns:NotificationFrequencyType" />
+               <xs:element minOccurs="0" name="Tier" type="xs:int" />
+               <xs:element minOccurs="0" name="EmailNotification1" nillable="true" type="xs:string" />
+               <xs:element minOccurs="0" name="EmailNotification2" nillable="true" type="xs:string" />
+               <xs:element minOccurs="0" name="EmailNotification3" nillable="true" type="xs:string" />
+               <xs:element minOccurs="0" name="EmailNotification4" nillable="true" type="xs:string" />
+               <xs:element minOccurs="0" name="EmailNotification5" nillable="true" type="xs:string" />
+               <xs:element minOccurs="0" name="Owner" nillable="true" type="tns:Registrant" />
+               <xs:element minOccurs="0" name="Reseller" nillable="true" type="tns:Contact" />
+               <xs:sequence>
+                  <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Labels" nillable="true" type="q1:ArrayOfstring">
+                     <xs:annotation>
+                        <xs:documentation><![CDATA[List of labels)]]></xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:element name="NameWatchInfo" nillable="true" type="tns:NameWatchInfo" />
       <xs:complexType name="GetSslCertificateRequest">
         <xs:sequence>
           <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string" />
@@ -1024,44 +790,14 @@
           <xs:element minOccurs="0" name="Owner" nillable="true" type="tns:Registrant" />
           <xs:element minOccurs="0" name="Admin" nillable="true" type="tns:Contact" />
           <xs:element minOccurs="0" name="Tech" nillable="true" type="tns:Contact" />
-          <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SanNames" nillable="true" type="q1:ArrayOfstring" />
         </xs:sequence>
       </xs:complexType>
       <xs:element name="SslCertificateInfo" nillable="true" type="tns:SslCertificateInfo" />
-      <xs:complexType name="GetAutoInstallSslRequest">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string"/>
-        </xs:sequence>
-      </xs:complexType>
-      <xs:element name="GetAutoInstallSslRequest" nillable="true" type="tns:GetAutoInstallSslRequest"/>
-      <xs:complexType name="GetAutoInstallSslResponse">
-        <xs:complexContent mixed="false">
-          <xs:extension base="tns:AbstractResponse">
+         <xs:complexType name="GetMessagesRequest">
             <xs:sequence>
-              <xs:element minOccurs="0" name="AutoInstallSslInfo" nillable="true" type="tns:AutoInstallSslInfo"/>
+               <xs:element minOccurs="0" name="OrderId" nillable="true" type="xs:string" />
             </xs:sequence>
-          </xs:extension>
-        </xs:complexContent>
-      </xs:complexType>
-      <xs:element name="GetAutoInstallSslResponse" nillable="true" type="tns:GetAutoInstallSslResponse"/>
-      <xs:complexType name="AutoInstallSslInfo">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="Handle" nillable="true" type="xs:string"/>
-          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string"/>
-          <xs:element minOccurs="0" name="Created" type="xs:dateTime"/>
-          <xs:element minOccurs="0" name="CommonName" nillable="true" type="xs:string"/>
-          <xs:element minOccurs="0" name="ProductCode" nillable="true" type="xs:string"/>
-          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string"/>
-          <xs:element minOccurs="0" name="SanCount" type="xs:int"/>
-          <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string"/>
-        </xs:sequence>
-      </xs:complexType>
-      <xs:element name="AutoInstallSslInfo" nillable="true" type="tns:AutoInstallSslInfo"/>
-      <xs:complexType name="GetMessagesRequest">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="OrderId" nillable="true" type="xs:string" />
-        </xs:sequence>
-      </xs:complexType>
+         </xs:complexType>
       <xs:element name="GetMessagesRequest" nillable="true" type="tns:GetMessagesRequest" />
       <xs:complexType name="GetMessagesResponse">
         <xs:complexContent mixed="false">
@@ -1084,9 +820,9 @@
           <xs:element minOccurs="0" name="Attachments" nillable="true" type="tns:ArrayOfAttachment" />
           <xs:element minOccurs="0" name="Body" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Created" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="FromAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FromAddress" nillable="true" type="xs:string"/>
           <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="ToAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToAddress" nillable="true" type="xs:string"/>
           <xs:element minOccurs="0" name="Type" type="tns:MessageType" />
         </xs:sequence>
       </xs:complexType>
@@ -1244,11 +980,11 @@
       <xs:element name="GetQueueMessageResponse" nillable="true" type="tns:GetQueueMessageResponse" />
       <xs:complexType name="UploadDocumentationRequest">
         <xs:sequence>
-          <xs:element minOccurs="0" name="OrderId" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Documents" nillable="true" type="tns:ArrayOfAttachment" />
+          <xs:element minOccurs="0" name="OrderId" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Documents" nillable="true" type="tns:ArrayOfAttachment"/>
         </xs:sequence>
       </xs:complexType>
-      <xs:element name="UploadDocumentationRequest" nillable="true" type="tns:UploadDocumentationRequest" />
+      <xs:element name="UploadDocumentationRequest" nillable="true" type="tns:UploadDocumentationRequest"/>
       <xs:complexType name="UploadDocumentationResponse">
         <xs:complexContent mixed="false">
           <xs:extension base="tns:AbstractResponse">
@@ -1256,24 +992,24 @@
           </xs:extension>
         </xs:complexContent>
       </xs:complexType>
-      <xs:element name="UploadDocumentationResponse" nillable="true" type="tns:UploadDocumentationResponse" />
+      <xs:element name="UploadDocumentationResponse" nillable="true" type="tns:UploadDocumentationResponse"/>
       <xs:complexType name="UploadMessageRequest">
         <xs:sequence>
-          <xs:element minOccurs="0" name="OrderId" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Message" nillable="true" type="tns:Message" />
+          <xs:element minOccurs="0" name="OrderId" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Message" nillable="true" type="tns:Message"/>
         </xs:sequence>
       </xs:complexType>
-      <xs:element name="UploadMessageRequest" nillable="true" type="tns:UploadMessageRequest" />
+      <xs:element name="UploadMessageRequest" nillable="true" type="tns:UploadMessageRequest"/>
       <xs:complexType name="UploadMessageResponse">
         <xs:complexContent mixed="false">
           <xs:extension base="tns:AbstractResponse">
             <xs:sequence>
-              <xs:element minOccurs="0" name="MessageId" type="xs:int" />
+              <xs:element minOccurs="0" name="MessageId" type="xs:int"/>
             </xs:sequence>
           </xs:extension>
         </xs:complexContent>
       </xs:complexType>
-      <xs:element name="UploadMessageResponse" nillable="true" type="tns:UploadMessageResponse" />
+      <xs:element name="UploadMessageResponse" nillable="true" type="tns:UploadMessageResponse"/>
     </xs:schema>
     <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <xs:complexType name="ArrayOfstring">
@@ -1289,6 +1025,206 @@
       </xs:complexType>
       <xs:element name="ArrayOfint" nillable="true" type="tns:ArrayOfint" />
     </xs:schema>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.ascio.com/2013/02/AscioService">
+      <xs:import namespace="http://www.ascio.com/2013/02" />
+      <xs:element name="CreateOrder">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:AbstractOrderRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateOrderResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="CreateOrderResult" nillable="true" type="q1:CreateOrderResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ValidateOrder">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:AbstractOrderRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ValidateOrderResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="ValidateOrderResult" nillable="true" type="q1:ValidateOrderResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetOrder">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetOrderRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetOrderResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetOrderResult" nillable="true" type="q1:GetOrderResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetOrders">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetOrdersRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetOrdersResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetOrdersResult" nillable="true" type="q1:GetOrdersResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetMark">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetMarkRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetMarkResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetMarkResult" nillable="true" type="q1:GetMarkResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetDefensive">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetDefensiveRequest"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetDefensiveResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetDefensiveResult" nillable="true" type="q1:GetDefensiveResponse"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetNameWatch">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetNameWatchRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetNameWatchResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetNameWatchResult" nillable="true" type="q1:GetNameWatchResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetSslCertificate">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetSslCertificateRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetSslCertificateResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetSslCertificateResult" nillable="true" type="q1:GetSslCertificateResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetMessages">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetMessagesRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetMessagesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetMessagesResult" nillable="true" type="q1:GetMessagesResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PollQueue">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:PollQueueRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PollQueueResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="PollQueueResult" nillable="true" type="q1:PollQueueResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AckQueueMessage">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:AckQueueMessageRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AckQueueMessageResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="AckQueueMessageResult" nillable="true" type="q1:AckQueueMessageResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetQueueMessage">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:GetQueueMessageRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetQueueMessageResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="GetQueueMessageResult" nillable="true" type="q1:GetQueueMessageResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UploadDocumentation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:UploadDocumentationRequest"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UploadDocumentationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="UploadDocumentationResult" nillable="true" type="q1:UploadDocumentationResponse"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UploadMessage">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="request" nillable="true" type="q1:UploadMessageRequest"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UploadMessageResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://www.ascio.com/2013/02" minOccurs="0" name="UploadMessageResult" nillable="true" type="q1:UploadMessageResponse"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    
   </wsdl:types>
   <wsdl:message name="DefaultInputMessageHeaders">
     <wsdl:part xmlns:q1="http://www.ascio.com/2013/02" name="SecurityHeaderDetails" element="q1:SecurityHeaderDetails" />
@@ -1318,7 +1254,7 @@
     <wsdl:part name="parameters" element="tns:GetOrdersResponse" />
   </wsdl:message>
   <wsdl:message name="IAscioService_GetDefensive_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetDefensive" />
+    <wsdl:part name="parameters" element="tns:GetDefensive"/>
   </wsdl:message>
   <wsdl:message name="GetDefensiveInputMessage">
     <wsdl:part name="parameters" element="tns:GetDefensive" />
@@ -1343,12 +1279,6 @@
   </wsdl:message>
   <wsdl:message name="GetSslCertificateOutputMessage">
     <wsdl:part name="parameters" element="tns:GetSslCertificateResponse"/>
-  </wsdl:message>
-  <wsdl:message name="GetAutoInstallSslInputMessage">
-    <wsdl:part name="parameters" element="tns:GetAutoInstallSsl"/>
-  </wsdl:message>
-  <wsdl:message name="GetAutoInstallSslOutputMessage">
-    <wsdl:part name="parameters" element="tns:GetAutoInstallSslResponse"/>
   </wsdl:message>
   <wsdl:message name="GetMessagesInputMessage">
     <wsdl:part name="parameters" element="tns:GetMessages" />
@@ -1375,16 +1305,16 @@
     <wsdl:part name="parameters" element="tns:GetQueueMessageResponse" />
   </wsdl:message>
   <wsdl:message name="UploadDocumentationInputMessage">
-    <wsdl:part name="parameters" element="tns:UploadDocumentation" />
+    <wsdl:part name="parameters" element="tns:UploadDocumentation"/>
   </wsdl:message>
   <wsdl:message name="UploadDocumentationOutputMessage">
-    <wsdl:part name="parameters" element="tns:UploadDocumentationResponse" />
+    <wsdl:part name="parameters" element="tns:UploadDocumentationResponse"/>
   </wsdl:message>
   <wsdl:message name="UploadMessageInputMessage">
-    <wsdl:part name="parameters" element="tns:UploadMessage" />
+    <wsdl:part name="parameters" element="tns:UploadMessage"/>
   </wsdl:message>
   <wsdl:message name="UploadMessageOutputMessage">
-    <wsdl:part name="parameters" element="tns:UploadMessageResponse" />
+    <wsdl:part name="parameters" element="tns:UploadMessageResponse"/>
   </wsdl:message>
 
   <wsdl:portType name="IAscioService">
@@ -1420,10 +1350,6 @@
       <wsdl:input wsaw:Action="GetSslCertificate" message="tns:GetSslCertificateInputMessage"/>
       <wsdl:output wsaw:Action="http://www.ascio.com/2013/02/AscioService/IAscioService/GetSslCertificateResponse" message="tns:GetSslCertificateOutputMessage"/>
     </wsdl:operation>
-    <wsdl:operation name="GetAutoInstallSsl">
-      <wsdl:input wsaw:Action="GetAutoInstallSsl" message="tns:GetAutoInstallSslInputMessage"/>
-      <wsdl:output wsaw:Action="http://www.ascio.com/2013/02/AscioService/IAscioService/GetAutoInstallSslResponse" message="tns:GetAutoInstallSslOutputMessage"/>
-    </wsdl:operation>
     <wsdl:operation name="GetMessages">
       <wsdl:input wsaw:Action="GetMessages" message="tns:GetMessagesInputMessage" />
       <wsdl:output wsaw:Action="http://www.ascio.com/2013/02/AscioService/IAscioService/GetMessagesResponse" message="tns:GetMessagesOutputMessage" />
@@ -1441,12 +1367,12 @@
       <wsdl:output wsaw:Action="http://www.ascio.com/2013/02/AscioService/IAscioService/GetQueueMessageResponse" message="tns:GetQueueMessageOutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="UploadDocumentation">
-      <wsdl:input wsaw:Action="UploadDocumentation" message="tns:UploadDocumentationInputMessage" />
-      <wsdl:output wsaw:Action="http://www.ascio.com/2013/02/AscioService/IAscioService/UploadDocumentationResponse" message="tns:UploadDocumentationOutputMessage" />
+      <wsdl:input wsaw:Action="UploadDocumentation" message="tns:UploadDocumentationInputMessage"/>
+      <wsdl:output wsaw:Action="http://www.ascio.com/2013/02/AscioService/IAscioService/UploadDocumentationResponse" message="tns:UploadDocumentationOutputMessage"/>
     </wsdl:operation>
     <wsdl:operation name="UploadMessage">
-      <wsdl:input wsaw:Action="UploadMessage" message="tns:UploadMessageInputMessage" />
-      <wsdl:output wsaw:Action="http://www.ascio.com/2013/02/AscioService/IAscioService/UploadMessageResponse" message="tns:UploadMessageOutputMessage" />
+      <wsdl:input wsaw:Action="UploadMessage" message="tns:UploadMessageInputMessage"/>
+      <wsdl:output wsaw:Action="http://www.ascio.com/2013/02/AscioService/IAscioService/UploadMessageResponse" message="tns:UploadMessageOutputMessage"/>
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="AscioServiceBinding" type="tns:IAscioService">
@@ -1511,7 +1437,7 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetNameWatch">
+        <wsdl:operation name="GetNameWatch">
       <soap:operation soapAction="GetNameWatch" style="document" />
       <wsdl:input>
         <soap:header message="tns:DefaultInputMessageHeaders" part="SecurityHeaderDetails" use="literal" />
@@ -1529,16 +1455,6 @@
       </wsdl:input>
       <wsdl:output>
         <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetAutoInstallSsl">
-      <soap:operation soapAction="GetAutoInstallSsl" style="document"/>
-      <wsdl:input>
-        <soap:header message="tns:DefaultInputMessageHeaders" part="SecurityHeaderDetails" use="literal" />
-        <soap:body use="literal"/>
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal"/>
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetMessages">
@@ -1582,23 +1498,23 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="UploadDocumentation">
-      <soap:operation soapAction="UploadDocumentation" style="document" />
+      <soap:operation soapAction="UploadDocumentation" style="document"/>
       <wsdl:input>
-        <soap:header message="tns:DefaultInputMessageHeaders" part="SecurityHeaderDetails" use="literal" />
-        <soap:body use="literal" />
+        <soap:header message="tns:DefaultInputMessageHeaders" part="SecurityHeaderDetails" use="literal"/>
+        <soap:body use="literal"/>
       </wsdl:input>
       <wsdl:output>
-        <soap:body use="literal" />
+        <soap:body use="literal"/>
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="UploadMessage">
-      <soap:operation soapAction="UploadMessage" style="document" />
+      <soap:operation soapAction="UploadMessage" style="document"/>
       <wsdl:input>
-        <soap:header message="tns:DefaultInputMessageHeaders" part="SecurityHeaderDetails" use="literal" />
-        <soap:body use="literal" />
+        <soap:header message="tns:DefaultInputMessageHeaders" part="SecurityHeaderDetails" use="literal"/>
+        <soap:body use="literal"/>
       </wsdl:input>
       <wsdl:output>
-        <soap:body use="literal" />
+        <soap:body use="literal"/>
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>

@@ -50,6 +50,11 @@ class SslCertificate
      */
     protected $Tech = null;
 
+    /**
+     * @var ArrayOfstring $SanNames
+     */
+    protected $SanNames = null;
+
     
     public function __construct()
     {
@@ -215,6 +220,24 @@ class SslCertificate
     public function setTech($Tech)
     {
       $this->Tech = $Tech;
+      return $this;
+    }
+
+    /**
+     * @return ArrayOfstring
+     */
+    public function getSanNames()
+    {
+      return $this->SanNames;
+    }
+
+    /**
+     * @param ArrayOfstring $SanNames
+     * @return \ascio\v3\SslCertificate
+     */
+    public function setSanNames($SanNames)
+    {
+      $this->SanNames = $SanNames;
       return $this;
     }
 

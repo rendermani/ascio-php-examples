@@ -6,35 +6,33 @@ class GetNameWatchResponse extends AbstractResponse
 {
 
     /**
-     * @var GetNameWatchResponse $GetNameWatchResult
+     * @var NameWatchInfo $NameWatchInfo
      */
-    protected $GetNameWatchResult = null;
+    protected $NameWatchInfo = null;
 
     /**
      * @param int $ResultCode
-     * @param GetNameWatchResponse $GetNameWatchResult
      */
-    public function __construct($ResultCode, $GetNameWatchResult)
+    public function __construct($ResultCode)
     {
       parent::__construct($ResultCode);
-      $this->GetNameWatchResult = $GetNameWatchResult;
     }
 
     /**
-     * @return GetNameWatchResponse
+     * @return NameWatchInfo
      */
-    public function getGetNameWatchResult()
+    public function getNameWatchInfo()
     {
-      return $this->GetNameWatchResult;
+      return $this->NameWatchInfo;
     }
 
     /**
-     * @param GetNameWatchResponse $GetNameWatchResult
+     * @param NameWatchInfo $NameWatchInfo
      * @return \ascio\v3\GetNameWatchResponse
      */
-    public function setGetNameWatchResult($GetNameWatchResult)
+    public function setNameWatchInfo($NameWatchInfo)
     {
-      $this->GetNameWatchResult = $GetNameWatchResult;
+      $this->NameWatchInfo = $NameWatchInfo;
       return $this;
     }
 
