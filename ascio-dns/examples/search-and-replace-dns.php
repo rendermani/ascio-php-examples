@@ -1,5 +1,6 @@
 <?php
 require_once '../DnsService.php';
+require_once 'config.php';
 echo "start\n";
 /**
  * 
@@ -8,8 +9,8 @@ echo "start\n";
  */
 class ZoneUpdater {
 	var $dnsService;
-	public function __construct($user,$pw,$partner = false) {
-		$this->dnsService = new DnsService($user,$pw,$partner);
+	public function __construct($user,$pw,$actAs = false) {
+		$this->dnsService = new DnsService($user,$pw,false,$actAs);
 	}
 	public function replaceCname($zoneName, $oldTarget,$newTarget) {
 		$zone = new GetZone();
@@ -57,7 +58,7 @@ class ZoneUpdater {
 	}
 }
 
-$zoneUpdater = new ZoneUpdater("user", "pw");
+$zoneUpdater = new ZoneUpdater($config->account, $config->password,$config->impersonateUser);
 $zoneUpdater->updateCnameRecords("target-cname-here","new-a-record-ip-here");
 
 echo "end\n"; 
