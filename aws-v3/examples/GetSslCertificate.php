@@ -18,7 +18,7 @@ $getSslCertificateRequest->setHandle("CLOUDYAN53998");
 
 $response = $ascioClient->GetSslCertificate(new ascio\GetSslCertificate($getSslCertificateRequest));
 
-$result = $response->getGetSslCertificateResult();
+$result = $response->GetSslCertificateResult;
 var_dump($result);
 
 
