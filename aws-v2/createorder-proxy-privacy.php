@@ -8,14 +8,13 @@ $order = array(
     'Domain' => Array(
         'DomainName'    => 'domain.name',
         'PrivacyProxy' => Array(
-            'Type' => 'Privacy', //Privacy | Proxy | None 
-            'PrivacyAdmin' 		=> true,
-        	'PrivacyTech'   	=> true,
-        	'PrivacyBilling'    => true
-        		
-            )
-        )
-    );
+		'Type' => 'Privacy', //Privacy | Proxy | None 
+		'PrivacyAdmin' 		=> true,
+		'PrivacyTech'   	=> true,
+		'PrivacyBilling'    => true        		
+         )
+    )
+);
 
 $params = array(
     'sessionId' => 'mySessionId',
