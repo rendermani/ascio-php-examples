@@ -1,32 +1,60 @@
 <?php
 
+namespace ascio\v2;
+
 class Attachment
 {
 
-  /**
-   * 
-   * @var base64Binary $Data
-   * @access public
-   */
-  public $Data = null;
+    /**
+     * @var base64Binary $Data
+     */
+    protected $Data = null;
 
-  /**
-   * 
-   * @var string $FileName
-   * @access public
-   */
-  public $FileName = null;
+    /**
+     * @var string $FileName
+     */
+    protected $FileName = null;
 
-  /**
-   * 
-   * @param base64Binary $Data
-   * @param string $FileName
-   * @access public
-   */
-  public function __construct($Data, $FileName)
-  {
-    $this->Data = $Data;
-    $this->FileName = $FileName;
-  }
+    
+    public function __construct()
+    {
+    
+    }
+
+    /**
+     * @return base64Binary
+     */
+    public function getData()
+    {
+      return $this->Data;
+    }
+
+    /**
+     * @param base64Binary $Data
+     * @return \ascio\v2\Attachment
+     */
+    public function setData($Data)
+    {
+      $this->Data = $Data;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFileName()
+    {
+      return $this->FileName;
+    }
+
+    /**
+     * @param string $FileName
+     * @return \ascio\v2\Attachment
+     */
+    public function setFileName($FileName)
+    {
+      $this->FileName = $FileName;
+      return $this;
+    }
 
 }

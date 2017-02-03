@@ -1,104 +1,264 @@
 <?php
 
+namespace ascio\v2;
+
 class SearchOrderRequest
 {
 
-  /**
-   * 
-   * @var OrderType[] $OrderTypes
-   * @access public
-   */
-  public $OrderTypes = null;
+    /**
+     * @var ArrayOfOrderType $OrderTypes
+     */
+    protected $OrderTypes = null;
 
-  /**
-   * 
-   * @var OrderStatusType[] $OrderStatusTypes
-   * @access public
-   */
-  public $OrderStatusTypes = null;
+    /**
+     * @var ArrayOfOrderStatusType $OrderStatusTypes
+     */
+    protected $OrderStatusTypes = null;
 
-  /**
-   * 
-   * @var dateTime $FromDate
-   * @access public
-   */
-  public $FromDate = null;
+    /**
+     * @var \DateTime $FromDate
+     */
+    protected $FromDate = null;
 
-  /**
-   * 
-   * @var dateTime $ToDate
-   * @access public
-   */
-  public $ToDate = null;
+    /**
+     * @var \DateTime $ToDate
+     */
+    protected $ToDate = null;
 
-  /**
-   * 
-   * @var string $DomainName
-   * @access public
-   */
-  public $DomainName = null;
+    /**
+     * @var string $DomainName
+     */
+    protected $DomainName = null;
 
-  /**
-   * 
-   * @var string $TransactionComment
-   * @access public
-   */
-  public $TransactionComment = null;
+    /**
+     * @var string $TransactionComment
+     */
+    protected $TransactionComment = null;
 
-  /**
-   * 
-   * @var string $Comments
-   * @access public
-   */
-  public $Comments = null;
+    /**
+     * @var string $Comments
+     */
+    protected $Comments = null;
 
-  /**
-   * 
-   * @var boolean $IncludeDomainDetails
-   * @access public
-   */
-  public $IncludeDomainDetails = null;
+    /**
+     * @var boolean $IncludeDomainDetails
+     */
+    protected $IncludeDomainDetails = null;
 
-  /**
-   * 
-   * @var PagingInfo $PageInfo
-   * @access public
-   */
-  public $PageInfo = null;
+    /**
+     * @var PagingInfo $PageInfo
+     */
+    protected $PageInfo = null;
 
-  /**
-   * 
-   * @var SearchOrderSortType $OrderSort
-   * @access public
-   */
-  public $OrderSort = null;
+    /**
+     * @var SearchOrderSortType $OrderSort
+     */
+    protected $OrderSort = null;
 
-  /**
-   * 
-   * @param OrderType[] $OrderTypes
-   * @param OrderStatusType[] $OrderStatusTypes
-   * @param dateTime $FromDate
-   * @param dateTime $ToDate
-   * @param string $DomainName
-   * @param string $TransactionComment
-   * @param string $Comments
-   * @param boolean $IncludeDomainDetails
-   * @param PagingInfo $PageInfo
-   * @param SearchOrderSortType $OrderSort
-   * @access public
-   */
-  public function __construct($OrderTypes, $OrderStatusTypes, $FromDate, $ToDate, $DomainName, $TransactionComment, $Comments, $IncludeDomainDetails, $PageInfo, $OrderSort)
-  {
-    $this->OrderTypes = $OrderTypes;
-    $this->OrderStatusTypes = $OrderStatusTypes;
-    $this->FromDate = $FromDate;
-    $this->ToDate = $ToDate;
-    $this->DomainName = $DomainName;
-    $this->TransactionComment = $TransactionComment;
-    $this->Comments = $Comments;
-    $this->IncludeDomainDetails = $IncludeDomainDetails;
-    $this->PageInfo = $PageInfo;
-    $this->OrderSort = $OrderSort;
-  }
+    /**
+     * @param boolean $IncludeDomainDetails
+     * @param SearchOrderSortType $OrderSort
+     */
+    public function __construct($IncludeDomainDetails, $OrderSort)
+    {
+      $this->IncludeDomainDetails = $IncludeDomainDetails;
+      $this->OrderSort = $OrderSort;
+    }
+
+    /**
+     * @return ArrayOfOrderType
+     */
+    public function getOrderTypes()
+    {
+      return $this->OrderTypes;
+    }
+
+    /**
+     * @param ArrayOfOrderType $OrderTypes
+     * @return \ascio\v2\SearchOrderRequest
+     */
+    public function setOrderTypes($OrderTypes)
+    {
+      $this->OrderTypes = $OrderTypes;
+      return $this;
+    }
+
+    /**
+     * @return ArrayOfOrderStatusType
+     */
+    public function getOrderStatusTypes()
+    {
+      return $this->OrderStatusTypes;
+    }
+
+    /**
+     * @param ArrayOfOrderStatusType $OrderStatusTypes
+     * @return \ascio\v2\SearchOrderRequest
+     */
+    public function setOrderStatusTypes($OrderStatusTypes)
+    {
+      $this->OrderStatusTypes = $OrderStatusTypes;
+      return $this;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getFromDate()
+    {
+      if ($this->FromDate == null) {
+        return null;
+      } else {
+        try {
+          return new \DateTime($this->FromDate);
+        } catch (\Exception $e) {
+          return false;
+        }
+      }
+    }
+
+    /**
+     * @param \DateTime $FromDate
+     * @return \ascio\v2\SearchOrderRequest
+     */
+    public function setFromDate(\DateTime $FromDate)
+    {
+      $this->FromDate = $FromDate->format(\DateTime::ATOM);
+      return $this;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getToDate()
+    {
+      if ($this->ToDate == null) {
+        return null;
+      } else {
+        try {
+          return new \DateTime($this->ToDate);
+        } catch (\Exception $e) {
+          return false;
+        }
+      }
+    }
+
+    /**
+     * @param \DateTime $ToDate
+     * @return \ascio\v2\SearchOrderRequest
+     */
+    public function setToDate(\DateTime $ToDate)
+    {
+      $this->ToDate = $ToDate->format(\DateTime::ATOM);
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDomainName()
+    {
+      return $this->DomainName;
+    }
+
+    /**
+     * @param string $DomainName
+     * @return \ascio\v2\SearchOrderRequest
+     */
+    public function setDomainName($DomainName)
+    {
+      $this->DomainName = $DomainName;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTransactionComment()
+    {
+      return $this->TransactionComment;
+    }
+
+    /**
+     * @param string $TransactionComment
+     * @return \ascio\v2\SearchOrderRequest
+     */
+    public function setTransactionComment($TransactionComment)
+    {
+      $this->TransactionComment = $TransactionComment;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getComments()
+    {
+      return $this->Comments;
+    }
+
+    /**
+     * @param string $Comments
+     * @return \ascio\v2\SearchOrderRequest
+     */
+    public function setComments($Comments)
+    {
+      $this->Comments = $Comments;
+      return $this;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getIncludeDomainDetails()
+    {
+      return $this->IncludeDomainDetails;
+    }
+
+    /**
+     * @param boolean $IncludeDomainDetails
+     * @return \ascio\v2\SearchOrderRequest
+     */
+    public function setIncludeDomainDetails($IncludeDomainDetails)
+    {
+      $this->IncludeDomainDetails = $IncludeDomainDetails;
+      return $this;
+    }
+
+    /**
+     * @return PagingInfo
+     */
+    public function getPageInfo()
+    {
+      return $this->PageInfo;
+    }
+
+    /**
+     * @param PagingInfo $PageInfo
+     * @return \ascio\v2\SearchOrderRequest
+     */
+    public function setPageInfo($PageInfo)
+    {
+      $this->PageInfo = $PageInfo;
+      return $this;
+    }
+
+    /**
+     * @return SearchOrderSortType
+     */
+    public function getOrderSort()
+    {
+      return $this->OrderSort;
+    }
+
+    /**
+     * @param SearchOrderSortType $OrderSort
+     * @return \ascio\v2\SearchOrderRequest
+     */
+    public function setOrderSort($OrderSort)
+    {
+      $this->OrderSort = $OrderSort;
+      return $this;
+    }
 
 }

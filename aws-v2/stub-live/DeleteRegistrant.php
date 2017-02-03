@@ -1,32 +1,64 @@
 <?php
 
+namespace ascio\v2;
+
 class DeleteRegistrant
 {
 
-  /**
-   * 
-   * @var string $sessionId
-   * @access public
-   */
-  public $sessionId = null;
+    /**
+     * @var string $sessionId
+     */
+    protected $sessionId = null;
 
-  /**
-   * 
-   * @var string $registrantHandle
-   * @access public
-   */
-  public $registrantHandle = null;
+    /**
+     * @var string $registrantHandle
+     */
+    protected $registrantHandle = null;
 
-  /**
-   * 
-   * @param string $sessionId
-   * @param string $registrantHandle
-   * @access public
-   */
-  public function __construct($sessionId, $registrantHandle)
-  {
-    $this->sessionId = $sessionId;
-    $this->registrantHandle = $registrantHandle;
-  }
+    /**
+     * @param string $sessionId
+     * @param string $registrantHandle
+     */
+    public function __construct($sessionId, $registrantHandle)
+    {
+      $this->sessionId = $sessionId;
+      $this->registrantHandle = $registrantHandle;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSessionId()
+    {
+      return $this->sessionId;
+    }
+
+    /**
+     * @param string $sessionId
+     * @return \ascio\v2\DeleteRegistrant
+     */
+    public function setSessionId($sessionId)
+    {
+      $this->sessionId = $sessionId;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRegistrantHandle()
+    {
+      return $this->registrantHandle;
+    }
+
+    /**
+     * @param string $registrantHandle
+     * @return \ascio\v2\DeleteRegistrant
+     */
+    public function setRegistrantHandle($registrantHandle)
+    {
+      $this->registrantHandle = $registrantHandle;
+      return $this;
+    }
 
 }

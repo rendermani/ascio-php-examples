@@ -1,41 +1,85 @@
 <?php
 
+namespace ascio\v2;
+
 class Clause
 {
 
-  /**
-   * 
-   * @var string $Attribute
-   * @access public
-   */
-  public $Attribute = null;
+    /**
+     * @var string $Attribute
+     */
+    protected $Attribute = null;
 
-  /**
-   * 
-   * @var SearchOperatorType $Operator
-   * @access public
-   */
-  public $Operator = null;
+    /**
+     * @var SearchOperatorType $Operator
+     */
+    protected $Operator = null;
 
-  /**
-   * 
-   * @var string $Value
-   * @access public
-   */
-  public $Value = null;
+    /**
+     * @var string $Value
+     */
+    protected $Value = null;
 
-  /**
-   * 
-   * @param string $Attribute
-   * @param SearchOperatorType $Operator
-   * @param string $Value
-   * @access public
-   */
-  public function __construct($Attribute, $Operator, $Value)
-  {
-    $this->Attribute = $Attribute;
-    $this->Operator = $Operator;
-    $this->Value = $Value;
-  }
+    /**
+     * @param SearchOperatorType $Operator
+     */
+    public function __construct($Operator)
+    {
+      $this->Operator = $Operator;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAttribute()
+    {
+      return $this->Attribute;
+    }
+
+    /**
+     * @param string $Attribute
+     * @return \ascio\v2\Clause
+     */
+    public function setAttribute($Attribute)
+    {
+      $this->Attribute = $Attribute;
+      return $this;
+    }
+
+    /**
+     * @return SearchOperatorType
+     */
+    public function getOperator()
+    {
+      return $this->Operator;
+    }
+
+    /**
+     * @param SearchOperatorType $Operator
+     * @return \ascio\v2\Clause
+     */
+    public function setOperator($Operator)
+    {
+      $this->Operator = $Operator;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getValue()
+    {
+      return $this->Value;
+    }
+
+    /**
+     * @param string $Value
+     * @return \ascio\v2\Clause
+     */
+    public function setValue($Value)
+    {
+      $this->Value = $Value;
+      return $this;
+    }
 
 }

@@ -1,50 +1,108 @@
 <?php
 
+namespace ascio\v2;
+
 class SearchCriteria
 {
 
-  /**
-   * 
-   * @var Clause[] $Clauses
-   * @access public
-   */
-  public $Clauses = null;
+    /**
+     * @var ArrayOfClause $Clauses
+     */
+    protected $Clauses = null;
 
-  /**
-   * 
-   * @var SearchModeType $Mode
-   * @access public
-   */
-  public $Mode = null;
+    /**
+     * @var SearchModeType $Mode
+     */
+    protected $Mode = null;
 
-  /**
-   * 
-   * @var string[] $Withoutstates
-   * @access public
-   */
-  public $Withoutstates = null;
+    /**
+     * @var ArrayOfstring $Withoutstates
+     */
+    protected $Withoutstates = null;
 
-  /**
-   * 
-   * @var string[] $Withstates
-   * @access public
-   */
-  public $Withstates = null;
+    /**
+     * @var ArrayOfstring $Withstates
+     */
+    protected $Withstates = null;
 
-  /**
-   * 
-   * @param Clause[] $Clauses
-   * @param SearchModeType $Mode
-   * @param string[] $Withoutstates
-   * @param string[] $Withstates
-   * @access public
-   */
-  public function __construct($Clauses, $Mode, $Withoutstates, $Withstates)
-  {
-    $this->Clauses = $Clauses;
-    $this->Mode = $Mode;
-    $this->Withoutstates = $Withoutstates;
-    $this->Withstates = $Withstates;
-  }
+    /**
+     * @param SearchModeType $Mode
+     */
+    public function __construct($Mode)
+    {
+      $this->Mode = $Mode;
+    }
+
+    /**
+     * @return ArrayOfClause
+     */
+    public function getClauses()
+    {
+      return $this->Clauses;
+    }
+
+    /**
+     * @param ArrayOfClause $Clauses
+     * @return \ascio\v2\SearchCriteria
+     */
+    public function setClauses($Clauses)
+    {
+      $this->Clauses = $Clauses;
+      return $this;
+    }
+
+    /**
+     * @return SearchModeType
+     */
+    public function getMode()
+    {
+      return $this->Mode;
+    }
+
+    /**
+     * @param SearchModeType $Mode
+     * @return \ascio\v2\SearchCriteria
+     */
+    public function setMode($Mode)
+    {
+      $this->Mode = $Mode;
+      return $this;
+    }
+
+    /**
+     * @return ArrayOfstring
+     */
+    public function getWithoutstates()
+    {
+      return $this->Withoutstates;
+    }
+
+    /**
+     * @param ArrayOfstring $Withoutstates
+     * @return \ascio\v2\SearchCriteria
+     */
+    public function setWithoutstates($Withoutstates)
+    {
+      $this->Withoutstates = $Withoutstates;
+      return $this;
+    }
+
+    /**
+     * @return ArrayOfstring
+     */
+    public function getWithstates()
+    {
+      return $this->Withstates;
+    }
+
+    /**
+     * @param ArrayOfstring $Withstates
+     * @return \ascio\v2\SearchCriteria
+     */
+    public function setWithstates($Withstates)
+    {
+      $this->Withstates = $Withstates;
+      return $this;
+    }
 
 }

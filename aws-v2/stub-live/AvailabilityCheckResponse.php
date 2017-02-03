@@ -1,32 +1,64 @@
 <?php
 
+namespace ascio\v2;
+
 class AvailabilityCheckResponse
 {
 
-  /**
-   * 
-   * @var Response $AvailabilityCheckResult
-   * @access public
-   */
-  public $AvailabilityCheckResult = null;
+    /**
+     * @var Response $AvailabilityCheckResult
+     */
+    protected $AvailabilityCheckResult = null;
 
-  /**
-   * 
-   * @var AvailabilityCheckResult[] $results
-   * @access public
-   */
-  public $results = null;
+    /**
+     * @var ArrayOfAvailabilityCheckResult $results
+     */
+    protected $results = null;
 
-  /**
-   * 
-   * @param Response $AvailabilityCheckResult
-   * @param AvailabilityCheckResult[] $results
-   * @access public
-   */
-  public function __construct($AvailabilityCheckResult, $results)
-  {
-    $this->AvailabilityCheckResult = $AvailabilityCheckResult;
-    $this->results = $results;
-  }
+    /**
+     * @param Response $AvailabilityCheckResult
+     * @param ArrayOfAvailabilityCheckResult $results
+     */
+    public function __construct($AvailabilityCheckResult, $results)
+    {
+      $this->AvailabilityCheckResult = $AvailabilityCheckResult;
+      $this->results = $results;
+    }
+
+    /**
+     * @return Response
+     */
+    public function getAvailabilityCheckResult()
+    {
+      return $this->AvailabilityCheckResult;
+    }
+
+    /**
+     * @param Response $AvailabilityCheckResult
+     * @return \ascio\v2\AvailabilityCheckResponse
+     */
+    public function setAvailabilityCheckResult($AvailabilityCheckResult)
+    {
+      $this->AvailabilityCheckResult = $AvailabilityCheckResult;
+      return $this;
+    }
+
+    /**
+     * @return ArrayOfAvailabilityCheckResult
+     */
+    public function getResults()
+    {
+      return $this->results;
+    }
+
+    /**
+     * @param ArrayOfAvailabilityCheckResult $results
+     * @return \ascio\v2\AvailabilityCheckResponse
+     */
+    public function setResults($results)
+    {
+      $this->results = $results;
+      return $this;
+    }
 
 }
