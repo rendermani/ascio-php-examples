@@ -2,7 +2,7 @@
 
 namespace ascio\v3;
 
-class GetDefensiveRequest
+class GetAutoInstallSslRequest
 {
 
     /**
@@ -26,7 +26,7 @@ class GetDefensiveRequest
 
     /**
      * @param string $Handle
-     * @return \ascio\v3\GetDefensiveRequest
+     * @return \ascio\v3\GetAutoInstallSslRequest
      */
     public function setHandle($Handle)
     {

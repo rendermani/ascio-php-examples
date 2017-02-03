@@ -2,16 +2,16 @@
 
 namespace ascio\v3;
 
-class ValidateOrder
+class GetAutoInstallSsl
 {
 
     /**
-     * @var AbstractOrderRequest $request
+     * @var GetAutoInstallSslRequest $request
      */
     protected $request = null;
 
     /**
-     * @param AbstractOrderRequest $request
+     * @param GetAutoInstallSslRequest $request
      */
     public function __construct($request)
     {
@@ -19,7 +19,7 @@ class ValidateOrder
     }
 
     /**
-     * @return AbstractOrderRequest
+     * @return GetAutoInstallSslRequest
      */
     public function getRequest()
     {
@@ -27,8 +27,8 @@ class ValidateOrder
     }
 
     /**
-     * @param AbstractOrderRequest $request
-     * @return \ascio\v3\ValidateOrder
+     * @param GetAutoInstallSslRequest $request
+     * @return \ascio\v3\GetAutoInstallSsl
      */
     public function setRequest($request)
     {
