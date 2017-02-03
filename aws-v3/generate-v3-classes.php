@@ -14,5 +14,6 @@ function generate($inputFile, $outputDir) {
     echo "filename: ".$filename."\n";
    
 }
-generate('https://awstest.ascio.com/v3/aws.wsdl','live');
+generate('https://aws.ascio.com/v3/aws.wsdl','live');
+generate('https://awstest.ascio.com/v3/aws.wsdl','ote');
 
